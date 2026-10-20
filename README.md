@@ -123,3 +123,4 @@ and DLQ routing extend those exercises to meet Part B.1 of the final project.
 * *Spark cannot find the Kafka source*: add
   `--packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1` to `spark-submit`.
 * *Java not found*: install a JDK 11 or 17 and make sure `java -version` works in the same terminal.
+oui
