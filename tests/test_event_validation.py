@@ -1,4 +1,3 @@
-"""Vérifie la validation Spark sans broker Kafka ni bibliothèque de test externe."""
 import json
 import unittest
 
