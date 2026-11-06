@@ -1,0 +1,7 @@
+{
+  "alerts_measured": 284,
+  "latency_p50_s": 31.05,
+  "latency_p95_s": 43.58,
+  "latency_max_s": 47.34,
+  "latency_mean_s": 31.42
+}

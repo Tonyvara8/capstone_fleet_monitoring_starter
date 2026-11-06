@@ -1,0 +1,11 @@
+{
+  "label": "E4_burst/after_drain",
+  "taken_at": "2026-11-06T22:45:39+0100",
+  "parquet_rows": 147554,
+  "parquet_distinct_event_ids": 147554,
+  "parquet_duplicate_rows": 0,
+  "alerts_messages": 2971,
+  "alerts_distinct_alert_ids": 2971,
+  "alerts_duplicated_messages": 0,
+  "dlq_messages": 1021
+}

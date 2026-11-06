@@ -1,0 +1,10 @@
+[[34m2026-11-05T16:23:14.406+0100[0m] {[34mdagbag.py:[0m545} INFO[0m - Filling up the DagBag from /home/claude/capstone/capstone_fleet_monitoring_starter-Rayan/airflow_dags[0m
+test_daily_pipeline_shape (test_dags.DagStructureTest.test_daily_pipeline_shape) ... ok
+test_lag_monitor_shape (test_dags.DagStructureTest.test_lag_monitor_shape) ... ok
+test_no_import_error (test_dags.DagStructureTest.test_no_import_error) ... ok
+test_day_files_ready (test_dags.SensorConditionTest.test_day_files_ready) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.107s
+
+OK

@@ -1,0 +1,493 @@
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[Stage 0:>                                                          (0 + 2) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=920, family=2, type=1, proto=0, laddr=('127.0.0.1', 61282), raddr=('127.0.0.1', 61281)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 3:>                                                          (0 + 2) / 2][Stage 3:=============================>                             (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=340, family=2, type=1, proto=0, laddr=('127.0.0.1', 61288), raddr=('127.0.0.1', 61287)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.[Stage 9:>                                                          (0 + 2) / 2][Stage 9:=============================>                             (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1328, family=2, type=1, proto=0, laddr=('127.0.0.1', 61294), raddr=('127.0.0.1', 61293)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 12:>                                                         (0 + 2) / 2][Stage 12:=============================>                            (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1136, family=2, type=1, proto=0, laddr=('127.0.0.1', 61300), raddr=('127.0.0.1', 61299)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 18:>                                                         (0 + 2) / 2][Stage 18:=============================>                            (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1352, family=2, type=1, proto=0, laddr=('127.0.0.1', 61306), raddr=('127.0.0.1', 61305)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 21:>                                                         (0 + 2) / 2][Stage 21:=============================>                            (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1160, family=2, type=1, proto=0, laddr=('127.0.0.1', 61312), raddr=('127.0.0.1', 61311)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 27:>                                                         (0 + 2) / 2][Stage 27:=============================>                            (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1160, family=2, type=1, proto=0, laddr=('127.0.0.1', 61318), raddr=('127.0.0.1', 61317)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 30:>                                                         (0 + 2) / 2][Stage 30:=============================>                            (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1104, family=2, type=1, proto=0, laddr=('127.0.0.1', 61324), raddr=('127.0.0.1', 61323)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 36:>                                                         (0 + 2) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1364, family=2, type=1, proto=0, laddr=('127.0.0.1', 61330), raddr=('127.0.0.1', 61329)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 39:>                                                         (0 + 2) / 2][Stage 39:=============================>                            (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1376, family=2, type=1, proto=0, laddr=('127.0.0.1', 61338), raddr=('127.0.0.1', 61337)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.[Stage 45:>                                                         (0 + 2) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1380, family=2, type=1, proto=0, laddr=('127.0.0.1', 61344), raddr=('127.0.0.1', 61343)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1352, family=2, type=1, proto=0, laddr=('127.0.0.1', 61346), raddr=('127.0.0.1', 61345)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1380, family=2, type=1, proto=0, laddr=('127.0.0.1', 61349), raddr=('127.0.0.1', 61348)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1384, family=2, type=1, proto=0, laddr=('127.0.0.1', 61351), raddr=('127.0.0.1', 61350)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 68:>                                                         (0 + 1) / 1]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1400, family=2, type=1, proto=0, laddr=('127.0.0.1', 61353), raddr=('127.0.0.1', 61352)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1392, family=2, type=1, proto=0, laddr=('127.0.0.1', 61355), raddr=('127.0.0.1', 61354)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1336, family=2, type=1, proto=0, laddr=('127.0.0.1', 61357), raddr=('127.0.0.1', 61356)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.[Stage 84:>                                                         (0 + 2) / 2][Stage 84:=============================>                            (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1352, family=2, type=1, proto=0, laddr=('127.0.0.1', 61363), raddr=('127.0.0.1', 61362)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 87:>                                                         (0 + 2) / 2][Stage 87:=============================>                            (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1364, family=2, type=1, proto=0, laddr=('127.0.0.1', 61369), raddr=('127.0.0.1', 61368)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 93:>                                                         (0 + 2) / 2][Stage 93:=============================>                            (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1380, family=2, type=1, proto=0, laddr=('127.0.0.1', 61375), raddr=('127.0.0.1', 61374)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 96:>                                                         (0 + 2) / 2][Stage 96:=============================>                            (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1136, family=2, type=1, proto=0, laddr=('127.0.0.1', 61382), raddr=('127.0.0.1', 61381)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.[Stage 102:>                (0 + 2) / 2][Stage 103:>                (0 + 0) / 2][Stage 102:========>        (1 + 1) / 2][Stage 103:>                (0 + 1) / 2][Stage 103:>                                                        (0 + 2) / 2][Stage 103:============================>                            (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1368, family=2, type=1, proto=0, laddr=('127.0.0.1', 61392), raddr=('127.0.0.1', 61391)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 108:>                (0 + 2) / 2][Stage 109:>                (0 + 0) / 2][Stage 108:========>        (1 + 1) / 2][Stage 109:>                (0 + 1) / 2][Stage 109:>                                                        (0 + 2) / 2][Stage 109:============================>                            (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1380, family=2, type=1, proto=0, laddr=('127.0.0.1', 61402), raddr=('127.0.0.1', 61401)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..[Stage 114:>                                                        (0 + 2) / 2][Stage 114:============================>                            (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1324, family=2, type=1, proto=0, laddr=('127.0.0.1', 61408), raddr=('127.0.0.1', 61407)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.[Stage 0:>                                                          (0 + 2) / 2][Stage 0:=============================>                             (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1356, family=2, type=1, proto=0, laddr=('127.0.0.1', 61420), raddr=('127.0.0.1', 61419)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 4:>                                                          (0 + 2) / 2][Stage 4:=============================>                             (1 + 1) / 2]                                                                                26/11/06 17:54:18 ERROR Executor: Exception in task 0.0 in stage 5.0 (TID 8)
+org.apache.spark.SparkFileNotFoundException: File file:/C:/Users/rayan/AppData/Local/Temp/tmp5vb2f54f/catalog/part-00001-e8f718e6-18eb-461b-8c7b-2af8c9c9d79c-c000.snappy.parquet does not exist
+It is possible the underlying files have been updated. You can explicitly invalidate the cache in Spark by running 'REFRESH TABLE tableName' command in SQL or by recreating the Dataset/DataFrame involved.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.readCurrentFileNotFoundError(QueryExecutionErrors.scala:780)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:220)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:279)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:129)
+	at org.apache.spark.sql.execution.FileSourceScanExec$$anon$1.hasNext(DataSourceScanExec.scala:593)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.columnartorow_nextBatch_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+26/11/06 17:54:18 ERROR Executor: Exception in task 1.0 in stage 5.0 (TID 9)
+org.apache.spark.SparkFileNotFoundException: File file:/C:/Users/rayan/AppData/Local/Temp/tmp5vb2f54f/catalog/part-00000-e8f718e6-18eb-461b-8c7b-2af8c9c9d79c-c000.snappy.parquet does not exist
+It is possible the underlying files have been updated. You can explicitly invalidate the cache in Spark by running 'REFRESH TABLE tableName' command in SQL or by recreating the Dataset/DataFrame involved.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.readCurrentFileNotFoundError(QueryExecutionErrors.scala:780)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:220)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:279)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:129)
+	at org.apache.spark.sql.execution.FileSourceScanExec$$anon$1.hasNext(DataSourceScanExec.scala:593)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.columnartorow_nextBatch_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+26/11/06 17:54:18 ERROR TaskSetManager: Task 0 in stage 5.0 failed 1 times; aborting job
+26/11/06 17:54:18 ERROR MicroBatchExecution: Query [id = 17955d66-499c-4bf2-aa53-2c76c34cdca7, runId = 868940f5-3c9c-4b22-ae34-0748a4ce99e0] terminated with error
+java.util.concurrent.ExecutionException: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 5.0 failed 1 times, most recent failure: Lost task 0.0 in stage 5.0 (TID 8) (Rayan.home executor driver): org.apache.spark.SparkFileNotFoundException: File file:/C:/Users/rayan/AppData/Local/Temp/tmp5vb2f54f/catalog/part-00001-e8f718e6-18eb-461b-8c7b-2af8c9c9d79c-c000.snappy.parquet does not exist
+It is possible the underlying files have been updated. You can explicitly invalidate the cache in Spark by running 'REFRESH TABLE tableName' command in SQL or by recreating the Dataset/DataFrame involved.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.readCurrentFileNotFoundError(QueryExecutionErrors.scala:780)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:220)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:279)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:129)
+	at org.apache.spark.sql.execution.FileSourceScanExec$$anon$1.hasNext(DataSourceScanExec.scala:593)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.columnartorow_nextBatch_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at org.apache.spark.sql.execution.exchange.BroadcastExchangeExec.doExecuteBroadcast(BroadcastExchangeExec.scala:212)
+	at org.apache.spark.sql.execution.InputAdapter.doExecuteBroadcast(WholeStageCodegenExec.scala:517)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeBroadcast$1(SparkPlan.scala:208)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:246)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:243)
+	at org.apache.spark.sql.execution.SparkPlan.executeBroadcast(SparkPlan.scala:204)
+	at org.apache.spark.sql.execution.joins.BroadcastHashJoinExec.prepareBroadcast(BroadcastHashJoinExec.scala:186)
+	at org.apache.spark.sql.execution.joins.BroadcastHashJoinExec.prepareRelation(BroadcastHashJoinExec.scala:200)
+	at org.apache.spark.sql.execution.joins.HashJoin.codegenOuter(HashJoin.scala:445)
+	at org.apache.spark.sql.execution.joins.HashJoin.codegenOuter$(HashJoin.scala:444)
+	at org.apache.spark.sql.execution.joins.BroadcastHashJoinExec.codegenOuter(BroadcastHashJoinExec.scala:40)
+	at org.apache.spark.sql.execution.joins.HashJoin.doConsume(HashJoin.scala:358)
+	at org.apache.spark.sql.execution.joins.HashJoin.doConsume$(HashJoin.scala:355)
+	at org.apache.spark.sql.execution.joins.BroadcastHashJoinExec.doConsume(BroadcastHashJoinExec.scala:40)
+	at org.apache.spark.sql.execution.CodegenSupport.consume(WholeStageCodegenExec.scala:196)
+	at org.apache.spark.sql.execution.CodegenSupport.consume$(WholeStageCodegenExec.scala:151)
+	at org.apache.spark.sql.execution.InputAdapter.consume(WholeStageCodegenExec.scala:498)
+	at org.apache.spark.sql.execution.InputRDDCodegen.doProduce(WholeStageCodegenExec.scala:485)
+	at org.apache.spark.sql.execution.InputRDDCodegen.doProduce$(WholeStageCodegenExec.scala:458)
+	at org.apache.spark.sql.execution.InputAdapter.doProduce(WholeStageCodegenExec.scala:498)
+	at org.apache.spark.sql.execution.CodegenSupport.$anonfun$produce$1(WholeStageCodegenExec.scala:97)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:246)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:243)
+	at org.apache.spark.sql.execution.CodegenSupport.produce(WholeStageCodegenExec.scala:92)
+	at org.apache.spark.sql.execution.CodegenSupport.produce$(WholeStageCodegenExec.scala:92)
+	at org.apache.spark.sql.execution.InputAdapter.produce(WholeStageCodegenExec.scala:498)
+	at org.apache.spark.sql.execution.joins.HashJoin.doProduce(HashJoin.scala:352)
+	at org.apache.spark.sql.execution.joins.HashJoin.doProduce$(HashJoin.scala:351)
+	at org.apache.spark.sql.execution.joins.BroadcastHashJoinExec.doProduce(BroadcastHashJoinExec.scala:40)
+	at org.apache.spark.sql.execution.CodegenSupport.$anonfun$produce$1(WholeStageCodegenExec.scala:97)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:246)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:243)
+	at org.apache.spark.sql.execution.CodegenSupport.produce(WholeStageCodegenExec.scala:92)
+	at org.apache.spark.sql.execution.CodegenSupport.produce$(WholeStageCodegenExec.scala:92)
+	at org.apache.spark.sql.execution.joins.BroadcastHashJoinExec.produce(BroadcastHashJoinExec.scala:40)
+	at org.apache.spark.sql.execution.ProjectExec.doProduce(basicPhysicalOperators.scala:55)
+	at org.apache.spark.sql.execution.CodegenSupport.$anonfun$produce$1(WholeStageCodegenExec.scala:97)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:246)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:243)
+	at org.apache.spark.sql.execution.CodegenSupport.produce(WholeStageCodegenExec.scala:92)
+	at org.apache.spark.sql.execution.CodegenSupport.produce$(WholeStageCodegenExec.scala:92)
+	at org.apache.spark.sql.execution.ProjectExec.produce(basicPhysicalOperators.scala:42)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec.doCodeGen(WholeStageCodegenExec.scala:660)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec.doExecute(WholeStageCodegenExec.scala:723)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:195)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:246)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:243)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:191)
+	at org.apache.spark.sql.execution.QueryExecution.toRdd$lzycompute(QueryExecution.scala:207)
+	at org.apache.spark.sql.execution.QueryExecution.toRdd(QueryExecution.scala:206)
+	at org.apache.spark.sql.execution.streaming.sources.ForeachBatchSink.addBatch(ForeachBatchSink.scala:30)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$17(MicroBatchExecution.scala:732)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runBatch$16(MicroBatchExecution.scala:729)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:427)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:425)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runBatch(MicroBatchExecution.scala:729)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$2(MicroBatchExecution.scala:286)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:427)
+	at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:425)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:249)
+	at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:67)
+	at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:239)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:311)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:289)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.$anonfun$run$1(StreamExecution.scala:211)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+	at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:211)
+Caused by: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 5.0 failed 1 times, most recent failure: Lost task 0.0 in stage 5.0 (TID 8) (Rayan.home executor driver): org.apache.spark.SparkFileNotFoundException: File file:/C:/Users/rayan/AppData/Local/Temp/tmp5vb2f54f/catalog/part-00001-e8f718e6-18eb-461b-8c7b-2af8c9c9d79c-c000.snappy.parquet does not exist
+It is possible the underlying files have been updated. You can explicitly invalidate the cache in Spark by running 'REFRESH TABLE tableName' command in SQL or by recreating the Dataset/DataFrame involved.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.readCurrentFileNotFoundError(QueryExecutionErrors.scala:780)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:220)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:279)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:129)
+	at org.apache.spark.sql.execution.FileSourceScanExec$$anon$1.hasNext(DataSourceScanExec.scala:593)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.columnartorow_nextBatch_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2856)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2792)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2791)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2791)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1247)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1247)
+	at scala.Option.foreach(Option.scala:407)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1247)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3060)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2994)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2983)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:989)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2398)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2419)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2438)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2463)
+	at org.apache.spark.rdd.RDD.$anonfun$collect$1(RDD.scala:1049)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:410)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:1048)
+	at org.apache.spark.sql.execution.SparkPlan.executeCollectIterator(SparkPlan.scala:455)
+	at org.apache.spark.sql.execution.exchange.BroadcastExchangeExec.$anonfun$relationFuture$1(BroadcastExchangeExec.scala:140)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withThreadLocalCaptured$2(SQLExecution.scala:224)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withThreadLocalCaptured$1(SQLExecution.scala:219)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.apache.spark.SparkFileNotFoundException: File file:/C:/Users/rayan/AppData/Local/Temp/tmp5vb2f54f/catalog/part-00001-e8f718e6-18eb-461b-8c7b-2af8c9c9d79c-c000.snappy.parquet does not exist
+It is possible the underlying files have been updated. You can explicitly invalidate the cache in Spark by running 'REFRESH TABLE tableName' command in SQL or by recreating the Dataset/DataFrame involved.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.readCurrentFileNotFoundError(QueryExecutionErrors.scala:780)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:220)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:279)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:129)
+	at org.apache.spark.sql.execution.FileSourceScanExec$$anon$1.hasNext(DataSourceScanExec.scala:593)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.columnartorow_nextBatch_0$(Unknown Source)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	... 3 more
+
+[info] query failed: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 5.0 failed 1 times, most recent failure: Lost task 0.0 in stage 5.0 (TID 8) (Rayan.home executor driver): org.apache.spark.SparkFileNotFoundException: File file:/C:/Users/rayan/AppData/Local/Temp/tmp5vb2f54f/catalog/p
+
+[info] regions seen by micro-batches: {'before': 'Paris'}
+.[Stage 1:>                                                          (0 + 2) / 4][Stage 1:=============================>                             (2 + 2) / 4]                                                                                [Stage 3:=============================>                             (2 + 2) / 4]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1344, family=2, type=1, proto=0, laddr=('127.0.0.1', 61430), raddr=('127.0.0.1', 61429)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.[Stage 5:>                                                          (0 + 2) / 2][Stage 5:=============================>                             (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1232, family=2, type=1, proto=0, laddr=('127.0.0.1', 61437), raddr=('127.0.0.1', 61436)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.[Stage 8:>                                                          (0 + 2) / 2]                                                                                [Stage 9:>                                                          (0 + 2) / 2][Stage 9:=============================>                             (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1140, family=2, type=1, proto=0, laddr=('127.0.0.1', 61447), raddr=('127.0.0.1', 61446)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.[Stage 0:>                                                          (0 + 2) / 2][Stage 0:=============================>                             (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1140, family=2, type=1, proto=0, laddr=('127.0.0.1', 61457), raddr=('127.0.0.1', 61456)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.....[Stage 0:>                                                          (0 + 2) / 4][Stage 0:>                                                          (0 + 3) / 4][Stage 0:==============>                                            (1 + 2) / 4][Stage 0:=============================>                             (2 + 2) / 4][Stage 0:============================================>              (3 + 1) / 4]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1168, family=2, type=1, proto=0, laddr=('127.0.0.1', 61471), raddr=('127.0.0.1', 61470)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.[Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2]                                                                                [Stage 2:>                                                          (0 + 2) / 2][Stage 2:=============================>                             (1 + 1) / 2]                                                                                [Stage 7:>                                                          (0 + 2) / 2][Stage 7:=============================>                             (1 + 1) / 2]                                                                                .[Stage 0:>                                                          (0 + 2) / 2][Stage 0:=============================>                             (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1364, family=2, type=1, proto=0, laddr=('127.0.0.1', 61499), raddr=('127.0.0.1', 61498)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.[Stage 0:>                                                          (0 + 2) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1316, family=2, type=1, proto=0, laddr=('127.0.0.1', 61513), raddr=('127.0.0.1', 61512)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 3:>                                                          (0 + 2) / 2][Stage 3:=============================>                             (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1444, family=2, type=1, proto=0, laddr=('127.0.0.1', 61520), raddr=('127.0.0.1', 61519)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.[Stage 6:>                                                          (0 + 2) / 2][Stage 6:=============================>                             (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1460, family=2, type=1, proto=0, laddr=('127.0.0.1', 61527), raddr=('127.0.0.1', 61526)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 9:>                                                          (0 + 2) / 2][Stage 9:=============================>                             (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1300, family=2, type=1, proto=0, laddr=('127.0.0.1', 61533), raddr=('127.0.0.1', 61532)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 12:>                                                         (0 + 2) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1444, family=2, type=1, proto=0, laddr=('127.0.0.1', 61539), raddr=('127.0.0.1', 61538)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 15:>                                                         (0 + 2) / 2][Stage 15:=============================>                            (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1468, family=2, type=1, proto=0, laddr=('127.0.0.1', 61545), raddr=('127.0.0.1', 61544)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.[Stage 1:>                                                          (0 + 2) / 2][Stage 1:>                  (0 + 2) / 2][Stage 2:>                  (0 + 0) / 1][Stage 1:>    (0 + 2) / 2][Stage 2:>    (0 + 0) / 1][Stage 3:>    (0 + 0) / 2]                                                                                [Stage 1:==>  (1 + 1) / 2][Stage 3:>    (0 + 1) / 2][Stage 4:>    (0 + 0) / 2]                                                                                [Stage 3:>                  (0 + 2) / 2][Stage 4:>                  (0 + 0) / 2][Stage 3:>    (0 + 2) / 2][Stage 4:>    (0 + 0) / 2][Stage 5:>    (0 + 0) / 1][Stage 3:==>  (1 + 1) / 2][Stage 4:>    (0 + 1) / 2][Stage 5:>    (0 + 0) / 1]                                                                                [Stage 4:>    (0 + 2) / 2][Stage 5:>    (0 + 0) / 1][Stage 8:>    (0 + 0) / 1][Stage 4:==>  (1 + 1) / 2][Stage 8:>    (0 + 1) / 1][Stage 9:>    (0 + 0) / 1]                                                                                [Stage 6:>                  (0 + 2) / 2][Stage 9:>                  (0 + 0) / 1][Stage 6:=========>         (1 + 1) / 2][Stage 9:>                  (0 + 1) / 1][Stage 7:>                  (0 + 2) / 2][Stage 10:>                 (0 + 0) / 2][Stage 7:>    (0 + 2) / 2][Stage 10:>   (0 + 0) / 2][Stage 13:>   (0 + 0) / 1]                                                                                [Stage 10:>                 (0 + 2) / 2][Stage 13:>                 (0 + 0) / 1][Stage 13:>                                                         (0 + 1) / 1][Stage 11:>                 (0 + 1) / 2][Stage 13:>                 (0 + 1) / 1]                                                                                [Stage 11:>                                                         (0 + 2) / 2][Stage 11:>   (0 + 2) / 2][Stage 14:>   (0 + 0) / 2][Stage 16:>   (0 + 0) / 2]                                                                                [Stage 14:>                 (0 + 2) / 2][Stage 16:>                 (0 + 0) / 2][Stage 14:>   (0 + 2) / 2][Stage 16:>   (0 + 0) / 2][Stage 17:>   (0 + 0) / 2][Stage 14:==> (1 + 1) / 2][Stage 16:>   (0 + 1) / 2][Stage 17:>   (0 + 0) / 2]                                                                                [Stage 16:>                 (0 + 2) / 2][Stage 17:>                 (0 + 0) / 2]                                                                                [Stage 17:>                 (0 + 2) / 2][Stage 18:>                 (0 + 0) / 1][Stage 17:>   (0 + 2) / 2][Stage 18:>   (0 + 0) / 1][Stage 22:>   (0 + 0) / 4][Stage 17:=========>        (1 + 1) / 2][Stage 22:>                 (0 + 1) / 4]                                                                                [Stage 19:>                 (0 + 2) / 2][Stage 22:====>             (1 + 0) / 4][Stage 22:=============================>                            (2 + 2) / 4][Stage 22:=========>        (2 + 2) / 4][Stage 23:>                 (0 + 0) / 1][Stage 20:>   (0 + 0) / 2][Stage 22:==> (2 + 2) / 4][Stage 23:>   (0 + 0) / 1]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1308, family=2, type=1, proto=0, laddr=('127.0.0.1', 61579), raddr=('127.0.0.1', 61578)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 24:>                                                         (0 + 2) / 2][Stage 24:=============================>                            (1 + 1) / 2][Stage 25:>                                                         (0 + 2) / 2][Stage 25:=============================>                            (1 + 1) / 2]                                                                                [Stage 26:>                                                         (0 + 2) / 2][Stage 26:>                 (0 + 2) / 2][Stage 27:>                 (0 + 0) / 2][Stage 26:>   (0 + 2) / 2][Stage 27:>   (0 + 0) / 2][Stage 28:>   (0 + 0) / 2][Stage 26:==> (1 + 1) / 2][Stage 27:>   (0 + 1) / 2][Stage 28:>   (0 + 0) / 2]                                                                                [Stage 27:>                 (0 + 2) / 2][Stage 28:>                 (0 + 0) / 2][Stage 27:>   (0 + 2) / 2][Stage 28:>   (0 + 0) / 2][Stage 29:>   (0 + 0) / 1][Stage 27:==> (1 + 1) / 2][Stage 28:>   (0 + 1) / 2][Stage 29:>   (0 + 0) / 1]                                                                                [Stage 28:>                 (0 + 2) / 2][Stage 29:>                 (0 + 0) / 1][Stage 28:>   (0 + 2) / 2][Stage 29:>   (0 + 0) / 1][Stage 32:>   (0 + 0) / 1][Stage 28:=============================>                            (1 + 1) / 2]                                                                                [Stage 33:>                                                         (0 + 1) / 1]                                                                                [Stage 36:>                 (0 + 0) / 2][Stage 40:>                 (0 + 2) / 2]                                                                                [Stage 36:=============================>                            (1 + 1) / 2]                                                                                [Stage 41:>                 (0 + 2) / 2][Stage 43:>                 (0 + 0) / 4][Stage 41:>   (0 + 2) / 2][Stage 43:>   (0 + 0) / 4][Stage 44:>   (0 + 0) / 2][Stage 41:==> (1 + 1) / 2][Stage 43:==> (2 + 1) / 4][Stage 44:>   (0 + 0) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1264, family=2, type=1, proto=0, laddr=('127.0.0.1', 61607), raddr=('127.0.0.1', 61606)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 44:>                 (0 + 2) / 2][Stage 46:>                 (0 + 0) / 2][Stage 44:>   (0 + 2) / 2][Stage 46:>   (0 + 0) / 2][Stage 48:>   (0 + 0) / 2][Stage 44:==> (1 + 1) / 2][Stage 46:>   (0 + 1) / 2][Stage 48:>   (0 + 0) / 2]                                                                                [Stage 48:>                 (0 + 2) / 2][Stage 50:>                 (0 + 0) / 2][Stage 47:>   (0 + 0) / 2][Stage 48:>   (0 + 2) / 2][Stage 50:>   (0 + 0) / 2][Stage 47:>   (0 + 1) / 2][Stage 48:==> (1 + 1) / 2][Stage 50:>   (0 + 0) / 2]                                                                                [Stage 57:=============================>                            (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1236, family=2, type=1, proto=0, laddr=('127.0.0.1', 61616), raddr=('127.0.0.1', 61615)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+[Stage 60:>                                                         (0 + 2) / 2][Stage 60:=============================>                            (1 + 1) / 2]                                                                                C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1244, family=2, type=1, proto=0, laddr=('127.0.0.1', 61622), raddr=('127.0.0.1', 61621)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1068, family=2, type=1, proto=0, laddr=('127.0.0.1', 61624), raddr=('127.0.0.1', 61623)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1244, family=2, type=1, proto=0, laddr=('127.0.0.1', 61626), raddr=('127.0.0.1', 61625)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1572, family=2, type=1, proto=0, laddr=('127.0.0.1', 61628), raddr=('127.0.0.1', 61627)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1244, family=2, type=1, proto=0, laddr=('127.0.0.1', 61630), raddr=('127.0.0.1', 61629)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1296, family=2, type=1, proto=0, laddr=('127.0.0.1', 61632), raddr=('127.0.0.1', 61631)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\rayan\AppData\Local\Programs\Python\Python311\Lib\socket.py:777: ResourceWarning: unclosed <socket.socket fd=1348, family=2, type=1, proto=0, laddr=('127.0.0.1', 61634), raddr=('127.0.0.1', 61633)>
+  self._sock = None
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.
+----------------------------------------------------------------------
+Ran 22 tests in 251.024s
+
+OK
+26/11/06 17:56:38 ERROR ShutdownHookManager: Exception while deleting Spark temp dir: C:\Users\rayan\AppData\Local\Temp\spark-f87efb51-a706-4d32-8f23-50257032e5ff\pyspark-83133e15-ce78-4f6e-917c-e02a5b1c0366
+java.nio.file.NoSuchFileException: C:\Users\rayan\AppData\Local\Temp\spark-f87efb51-a706-4d32-8f23-50257032e5ff\pyspark-83133e15-ce78-4f6e-917c-e02a5b1c0366
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:199)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1851)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:124)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:90)
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:121)
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:120)
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1126)
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4(ShutdownHookManager.scala:65)
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4$adapted(ShutdownHookManager.scala:62)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$2(ShutdownHookManager.scala:62)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:214)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.Try$.apply(Try.scala:213)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+26/11/06 17:56:38 ERROR ShutdownHookManager: Exception while deleting Spark temp dir: C:\Users\rayan\AppData\Local\Temp\spark-f87efb51-a706-4d32-8f23-50257032e5ff\pyspark-88e3847a-4497-4cd2-8c6e-87eed90eb2f4
+java.nio.file.NoSuchFileException: C:\Users\rayan\AppData\Local\Temp\spark-f87efb51-a706-4d32-8f23-50257032e5ff\pyspark-88e3847a-4497-4cd2-8c6e-87eed90eb2f4
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:199)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1851)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:124)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:90)
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:121)
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:120)
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1126)
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4(ShutdownHookManager.scala:65)
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4$adapted(ShutdownHookManager.scala:62)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$2(ShutdownHookManager.scala:62)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:214)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.Try$.apply(Try.scala:213)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Op‚ration r‚ussieÿ: le processus de PID 3240 (processus enfant de PID 25276) a ‚t‚
+arrˆt‚.
+Op‚ration r‚ussieÿ: le processus de PID 25276 (processus enfant de PID 4172) a ‚t‚
+arrˆt‚.
+Op‚ration r‚ussieÿ: le processus de PID 4172 (processus enfant de PID 2480) a ‚t‚
+arrˆt‚.

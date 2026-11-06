@@ -1,6 +1,7 @@
 import json
 import os
 import signal
+from collections import OrderedDict
 
 from confluent_kafka import Consumer, KafkaError, KafkaException
 
@@ -8,6 +9,26 @@ from confluent_kafka import Consumer, KafkaError, KafkaException
 BOOTSTRAP_SERVERS = "localhost:9092"
 TOPIC = "alerts"
 GROUP_ID = "alerts-notifier"
+SEEN_ALERTS_CAPACITY = 10_000
+
+
+class SeenAlerts:
+    """Last alert_ids handled by this instance (bounded)."""
+
+    def __init__(self, capacity=SEEN_ALERTS_CAPACITY):
+        self.capacity = capacity
+        self._ids = OrderedDict()
+
+    def already_seen(self, alert_id):
+        if alert_id is None:
+            return False
+        if alert_id in self._ids:
+            self._ids.move_to_end(alert_id)
+            return True
+        self._ids[alert_id] = None
+        if len(self._ids) > self.capacity:
+            self._ids.popitem(last=False)
+        return False
 
 
 def handle_alert(alert: dict):
@@ -68,6 +89,7 @@ def main():
     })
 
     print(f"[{client_id}] Listening to topic {TOPIC}. Ctrl+C to stop.", flush=True)
+    seen = SeenAlerts()
     try:
         # 3. Demander le topic et enregistrer les fonctions de réaffectation.
         # On passe les fonctions sans (), pour les appeler plus tard.
@@ -97,7 +119,10 @@ def main():
                 alert = json.loads(message.value())
 
                 # 8. Traiter l'alerte. Une exception empêche le commit suivant.
-                handle_alert(alert)
+                if seen.already_seen(alert.get("alert_id")):
+                    print(f"[{client_id}] Duplicate alert ignored: {alert.get('alert_id')}", flush=True)
+                else:
+                    handle_alert(alert)
 
                 # 9. Confirmer la prochaine position à lire après succès.
                 # Exemple : message à l'offset 7 -> offset confirmé 8.

@@ -1,0 +1,14 @@
+{
+  "config": "E",
+  "max_offsets_per_trigger": 10000,
+  "shuffle_partitions": 8,
+  "trigger_seconds": 2,
+  "backlog_events": 20000,
+  "rows_drained": 20199,
+  "throughput_events_per_s": 367.0,
+  "alerts_measured": 284,
+  "latency_p50_s": 31.05,
+  "latency_p95_s": 43.58,
+  "latency_max_s": 47.34,
+  "latency_mean_s": 31.42
+}

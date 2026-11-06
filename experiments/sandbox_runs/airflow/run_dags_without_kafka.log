@@ -1,0 +1,424 @@
+[[34m2026-11-05T16:15:58.386+0100[0m] {[34mdagbag.py:[0m545} INFO[0m - Filling up the DagBag from /home/claude/capstone/capstone_fleet_monitoring_starter-Rayan/airflow_dags[0m
+[[34m2026-11-05T16:16:08.480+0100[0m] {[34mdag.py:[0m4199} INFO[0m - dagrun id: fleet_daily_pipeline[0m
+[[34m2026-11-05T16:16:08.493+0100[0m] {[34mdag.py:[0m4215} INFO[0m - created dagrun <DagRun fleet_daily_pipeline @ 2026-11-05 00:00:00+00:00: manual__2026-11-05T00:00:00+00:00, state:running, queued_at: None. externally triggered: False>[0m
+[[34m2026-11-05T16:16:08.531+0100[0m] {[34mdag.py:[0m4161} INFO[0m - [DAG TEST] starting task_id=wait_for_day_files map_index=-1[0m
+[[34m2026-11-05T16:16:08.531+0100[0m] {[34mdag.py:[0m4164} INFO[0m - [DAG TEST] running task <TaskInstance: fleet_daily_pipeline.wait_for_day_files manual__2026-11-05T00:00:00+00:00 [scheduled]>[0m
+[2026-11-05 16:16:08,591] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_day_files' AIRFLOW_CTX_EXECUTION_DATE='2026-11-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-05T00:00:00+00:00'
+[[34m2026-11-05T16:16:08.591+0100[0m] {[34mtaskinstance.py:[0m2648} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_day_files' AIRFLOW_CTX_EXECUTION_DATE='2026-11-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-05T00:00:00+00:00'[0m
+[[34m2026-11-05T16:16:08.593+0100[0m] {[34mtaskinstance.py:[0m430} INFO[0m - ::endgroup::[0m
+[2026-11-05 16:16:08,597] {python.py:75} INFO - Poking callable: <function day_files_ready at 0x7f4f2467fb00>
+[[34m2026-11-05T16:16:08.597+0100[0m] {[34mpython.py:[0m75} INFO[0m - Poking callable: <function day_files_ready at 0x7f4f2467fb00>[0m
+[2026-11-05 16:16:08,597] {base.py:294} INFO - Success criteria met. Exiting.
+[[34m2026-11-05T16:16:08.597+0100[0m] {[34mbase.py:[0m294} INFO[0m - Success criteria met. Exiting.[0m
+[[34m2026-11-05T16:16:08.598+0100[0m] {[34mtaskinstance.py:[0m441} INFO[0m - ::group::Post task execution logs[0m
+[[34m2026-11-05T16:16:08.601+0100[0m] {[34mtaskinstance.py:[0m1206} INFO[0m - Marking task as SUCCESS. dag_id=fleet_daily_pipeline, task_id=wait_for_day_files, run_id=manual__2026-11-05T00:00:00+00:00, execution_date=20261105T000000, start_date=, end_date=20261105T151608[0m
+[[34m2026-11-05T16:16:08.607+0100[0m] {[34mdag.py:[0m4175} INFO[0m - [DAG TEST] end task task_id=wait_for_day_files map_index=-1[0m
+[[34m2026-11-05T16:16:08.620+0100[0m] {[34mdag.py:[0m4161} INFO[0m - [DAG TEST] starting task_id=check_topics map_index=-1[0m
+[[34m2026-11-05T16:16:08.620+0100[0m] {[34mdag.py:[0m4164} INFO[0m - [DAG TEST] running task <TaskInstance: fleet_daily_pipeline.check_topics manual__2026-11-05T00:00:00+00:00 [scheduled]>[0m
+[2026-11-05 16:16:08,638] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='check_topics' AIRFLOW_CTX_EXECUTION_DATE='2026-11-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-05T00:00:00+00:00'
+[[34m2026-11-05T16:16:08.638+0100[0m] {[34mtaskinstance.py:[0m2648} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='check_topics' AIRFLOW_CTX_EXECUTION_DATE='2026-11-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-05T00:00:00+00:00'[0m
+[[34m2026-11-05T16:16:08.638+0100[0m] {[34mtaskinstance.py:[0m430} INFO[0m - ::endgroup::[0m
+all 6 topics exist
+[2026-11-05 16:16:08,638] {python.py:237} INFO - Done. Returned value was: None
+[[34m2026-11-05T16:16:08.638+0100[0m] {[34mpython.py:[0m237} INFO[0m - Done. Returned value was: None[0m
+[[34m2026-11-05T16:16:08.638+0100[0m] {[34mtaskinstance.py:[0m441} INFO[0m - ::group::Post task execution logs[0m
+[[34m2026-11-05T16:16:08.640+0100[0m] {[34mtaskinstance.py:[0m1206} INFO[0m - Marking task as SUCCESS. dag_id=fleet_daily_pipeline, task_id=check_topics, run_id=manual__2026-11-05T00:00:00+00:00, execution_date=20261105T000000, start_date=, end_date=20261105T151608[0m
+[[34m2026-11-05T16:16:08.644+0100[0m] {[34mdag.py:[0m4175} INFO[0m - [DAG TEST] end task task_id=check_topics map_index=-1[0m
+[[34m2026-11-05T16:16:08.654+0100[0m] {[34mdag.py:[0m4161} INFO[0m - [DAG TEST] starting task_id=quality_job map_index=-1[0m
+[[34m2026-11-05T16:16:08.655+0100[0m] {[34mdag.py:[0m4164} INFO[0m - [DAG TEST] running task <TaskInstance: fleet_daily_pipeline.quality_job manual__2026-11-05T00:00:00+00:00 [scheduled]>[0m
+[2026-11-05 16:16:08,671] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='quality_job' AIRFLOW_CTX_EXECUTION_DATE='2026-11-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-05T00:00:00+00:00'
+[[34m2026-11-05T16:16:08.671+0100[0m] {[34mtaskinstance.py:[0m2648} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='quality_job' AIRFLOW_CTX_EXECUTION_DATE='2026-11-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-05T00:00:00+00:00'[0m
+[[34m2026-11-05T16:16:08.671+0100[0m] {[34mtaskinstance.py:[0m430} INFO[0m - ::endgroup::[0m
+[2026-11-05 16:16:08,672] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[[34m2026-11-05T16:16:08.672+0100[0m] {[34msubprocess.py:[0m63} INFO[0m - Tmp dir root location: /tmp[0m
+[2026-11-05 16:16:08,672] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/claude/venv_spark/bin/python spark_jobs/quality_job.py --date 2026-11-05 --events-path /tmp/fleet_dag_run_92gjpvld/parquet/events --output-dir /tmp/fleet_dag_run_92gjpvld/quality']
+[[34m2026-11-05T16:16:08.672+0100[0m] {[34msubprocess.py:[0m75} INFO[0m - Running command: ['/usr/bin/bash', '-c', '/home/claude/venv_spark/bin/python spark_jobs/quality_job.py --date 2026-11-05 --events-path /tmp/fleet_dag_run_92gjpvld/parquet/events --output-dir /tmp/fleet_dag_run_92gjpvld/quality'][0m
+[2026-11-05 16:16:08,679] {subprocess.py:86} INFO - Output:
+[[34m2026-11-05T16:16:08.679+0100[0m] {[34msubprocess.py:[0m86} INFO[0m - Output:[0m
+[2026-11-05 16:16:08,851] {subprocess.py:93} INFO - Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=33015 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+[[34m2026-11-05T16:16:08.851+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=33015 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=[0m
+[2026-11-05 16:16:09,034] {subprocess.py:93} INFO - Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=33015 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+[[34m2026-11-05T16:16:09.034+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=33015 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=[0m
+[2026-11-05 16:16:10,000] {subprocess.py:93} INFO - 26/11/05 16:16:09 WARN Utils: Your hostname, vm resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+[[34m2026-11-05T16:16:10.000+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - 26/11/05 16:16:09 WARN Utils: Your hostname, vm resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)[0m
+[2026-11-05 16:16:10,003] {subprocess.py:93} INFO - 26/11/05 16:16:10 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+[[34m2026-11-05T16:16:10.003+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - 26/11/05 16:16:10 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address[0m
+[2026-11-05 16:16:10,321] {subprocess.py:93} INFO - Setting default log level to "WARN".
+[[34m2026-11-05T16:16:10.321+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - Setting default log level to "WARN".[0m
+[2026-11-05 16:16:10,322] {subprocess.py:93} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[[34m2026-11-05T16:16:10.322+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).[0m
+[2026-11-05 16:16:10,471] {subprocess.py:93} INFO - 26/11/05 16:16:10 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[[34m2026-11-05T16:16:10.471+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - 26/11/05 16:16:10 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable[0m
+[2026-11-05 16:16:16,486] {subprocess.py:93} INFO - {
+[[34m2026-11-05T16:16:16.486+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - {[0m
+[2026-11-05 16:16:16,487] {subprocess.py:93} INFO -   "date": "2026-11-05",
+[[34m2026-11-05T16:16:16.487+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   "date": "2026-11-05",[0m
+[2026-11-05 16:16:16,487] {subprocess.py:93} INFO -   "duplicate_pct": 0.0,
+[[34m2026-11-05T16:16:16.487+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   "duplicate_pct": 0.0,[0m
+[2026-11-05 16:16:16,487] {subprocess.py:93} INFO -   "duplicate_rows": 0,
+[[34m2026-11-05T16:16:16.487+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   "duplicate_rows": 0,[0m
+[2026-11-05 16:16:16,487] {subprocess.py:93} INFO -   "duplicated_event_ids": 0,
+[[34m2026-11-05T16:16:16.487+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   "duplicated_event_ids": 0,[0m
+[2026-11-05 16:16:16,487] {subprocess.py:93} INFO -   "passed": true,
+[[34m2026-11-05T16:16:16.487+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   "passed": true,[0m
+[2026-11-05 16:16:16,487] {subprocess.py:93} INFO -   "reasons": [],
+[[34m2026-11-05T16:16:16.487+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   "reasons": [],[0m
+[2026-11-05 16:16:16,487] {subprocess.py:93} INFO -   "rows": 30000,
+[[34m2026-11-05T16:16:16.487+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   "rows": 30000,[0m
+[2026-11-05 16:16:16,487] {subprocess.py:93} INFO -   "thresholds": {
+[[34m2026-11-05T16:16:16.487+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   "thresholds": {[0m
+[2026-11-05 16:16:16,487] {subprocess.py:93} INFO -     "max_duplicate_pct": 0.5,
+[[34m2026-11-05T16:16:16.487+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -     "max_duplicate_pct": 0.5,[0m
+[2026-11-05 16:16:16,487] {subprocess.py:93} INFO -     "max_unknown_pct": 2.0,
+[[34m2026-11-05T16:16:16.487+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -     "max_unknown_pct": 2.0,[0m
+[2026-11-05 16:16:16,487] {subprocess.py:93} INFO -     "min_rows": 100
+[[34m2026-11-05T16:16:16.487+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -     "min_rows": 100[0m
+[2026-11-05 16:16:16,487] {subprocess.py:93} INFO -   },
+[[34m2026-11-05T16:16:16.487+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   },[0m
+[2026-11-05 16:16:16,488] {subprocess.py:93} INFO -   "unknown_region_pct": 1.0733,
+[[34m2026-11-05T16:16:16.488+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   "unknown_region_pct": 1.0733,[0m
+[2026-11-05 16:16:16,488] {subprocess.py:93} INFO -   "unknown_region_rows": 322
+[[34m2026-11-05T16:16:16.488+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   "unknown_region_rows": 322[0m
+[2026-11-05 16:16:16,488] {subprocess.py:93} INFO - }
+[[34m2026-11-05T16:16:16.488+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - }[0m
+[2026-11-05 16:16:16,488] {subprocess.py:93} INFO - verdict written to /tmp/fleet_dag_run_92gjpvld/quality/2026-11-05/verdict.json
+[[34m2026-11-05T16:16:16.488+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - verdict written to /tmp/fleet_dag_run_92gjpvld/quality/2026-11-05/verdict.json[0m
+[2026-11-05 16:16:17,403] {subprocess.py:97} INFO - Command exited with return code 0
+[[34m2026-11-05T16:16:17.403+0100[0m] {[34msubprocess.py:[0m97} INFO[0m - Command exited with return code 0[0m
+[[34m2026-11-05T16:16:17.404+0100[0m] {[34mtaskinstance.py:[0m441} INFO[0m - ::group::Post task execution logs[0m
+[[34m2026-11-05T16:16:17.416+0100[0m] {[34mtaskinstance.py:[0m1206} INFO[0m - Marking task as SUCCESS. dag_id=fleet_daily_pipeline, task_id=quality_job, run_id=manual__2026-11-05T00:00:00+00:00, execution_date=20261105T000000, start_date=, end_date=20261105T151617[0m
+[[34m2026-11-05T16:16:17.421+0100[0m] {[34mdag.py:[0m4175} INFO[0m - [DAG TEST] end task task_id=quality_job map_index=-1[0m
+[[34m2026-11-05T16:16:17.432+0100[0m] {[34mdag.py:[0m4161} INFO[0m - [DAG TEST] starting task_id=read_verdict map_index=-1[0m
+[[34m2026-11-05T16:16:17.432+0100[0m] {[34mdag.py:[0m4164} INFO[0m - [DAG TEST] running task <TaskInstance: fleet_daily_pipeline.read_verdict manual__2026-11-05T00:00:00+00:00 [scheduled]>[0m
+[2026-11-05 16:16:17,449] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='read_verdict' AIRFLOW_CTX_EXECUTION_DATE='2026-11-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-05T00:00:00+00:00'
+[[34m2026-11-05T16:16:17.449+0100[0m] {[34mtaskinstance.py:[0m2648} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='read_verdict' AIRFLOW_CTX_EXECUTION_DATE='2026-11-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-05T00:00:00+00:00'[0m
+[[34m2026-11-05T16:16:17.450+0100[0m] {[34mtaskinstance.py:[0m430} INFO[0m - ::endgroup::[0m
+[2026-11-05 16:16:17,450] {python.py:237} INFO - Done. Returned value was: run_report_job
+[[34m2026-11-05T16:16:17.450+0100[0m] {[34mpython.py:[0m237} INFO[0m - Done. Returned value was: run_report_job[0m
+[2026-11-05 16:16:17,450] {branch.py:36} INFO - Branch into run_report_job
+[[34m2026-11-05T16:16:17.450+0100[0m] {[34mbranch.py:[0m36} INFO[0m - Branch into run_report_job[0m
+[2026-11-05 16:16:17,450] {skipmixin.py:178} INFO - Following branch run_report_job
+[[34m2026-11-05T16:16:17.450+0100[0m] {[34mskipmixin.py:[0m178} INFO[0m - Following branch run_report_job[0m
+[2026-11-05 16:16:17,456] {skipmixin.py:246} INFO - Skipping tasks [('publish_quality_failed_alert', -1)]
+[[34m2026-11-05T16:16:17.456+0100[0m] {[34mskipmixin.py:[0m246} INFO[0m - Skipping tasks [('publish_quality_failed_alert', -1)][0m
+[[34m2026-11-05T16:16:17.464+0100[0m] {[34mtaskinstance.py:[0m441} INFO[0m - ::group::Post task execution logs[0m
+[[34m2026-11-05T16:16:17.471+0100[0m] {[34mtaskinstance.py:[0m1206} INFO[0m - Marking task as SUCCESS. dag_id=fleet_daily_pipeline, task_id=read_verdict, run_id=manual__2026-11-05T00:00:00+00:00, execution_date=20261105T000000, start_date=, end_date=20261105T151617[0m
+[[34m2026-11-05T16:16:17.476+0100[0m] {[34mdag.py:[0m4175} INFO[0m - [DAG TEST] end task task_id=read_verdict map_index=-1[0m
+[[34m2026-11-05T16:16:17.486+0100[0m] {[34mdag.py:[0m4161} INFO[0m - [DAG TEST] starting task_id=run_report_job map_index=-1[0m
+[[34m2026-11-05T16:16:17.486+0100[0m] {[34mdag.py:[0m4164} INFO[0m - [DAG TEST] running task <TaskInstance: fleet_daily_pipeline.run_report_job manual__2026-11-05T00:00:00+00:00 [scheduled]>[0m
+[2026-11-05 16:16:17,504] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='run_report_job' AIRFLOW_CTX_EXECUTION_DATE='2026-11-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-05T00:00:00+00:00'
+[[34m2026-11-05T16:16:17.504+0100[0m] {[34mtaskinstance.py:[0m2648} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='run_report_job' AIRFLOW_CTX_EXECUTION_DATE='2026-11-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-05T00:00:00+00:00'[0m
+[[34m2026-11-05T16:16:17.504+0100[0m] {[34mtaskinstance.py:[0m430} INFO[0m - ::endgroup::[0m
+[2026-11-05 16:16:17,504] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[[34m2026-11-05T16:16:17.504+0100[0m] {[34msubprocess.py:[0m63} INFO[0m - Tmp dir root location: /tmp[0m
+[2026-11-05 16:16:17,504] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/claude/venv_spark/bin/python spark_jobs/daily_report_job.py --date 2026-11-05 --events-path /tmp/fleet_dag_run_92gjpvld/parquet/events --output-dir /tmp/fleet_dag_run_92gjpvld/reports']
+[[34m2026-11-05T16:16:17.504+0100[0m] {[34msubprocess.py:[0m75} INFO[0m - Running command: ['/usr/bin/bash', '-c', '/home/claude/venv_spark/bin/python spark_jobs/daily_report_job.py --date 2026-11-05 --events-path /tmp/fleet_dag_run_92gjpvld/parquet/events --output-dir /tmp/fleet_dag_run_92gjpvld/reports'][0m
+[2026-11-05 16:16:17,512] {subprocess.py:86} INFO - Output:
+[[34m2026-11-05T16:16:17.512+0100[0m] {[34msubprocess.py:[0m86} INFO[0m - Output:[0m
+[2026-11-05 16:16:17,712] {subprocess.py:93} INFO - Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=33015 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+[[34m2026-11-05T16:16:17.712+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=33015 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=[0m
+[2026-11-05 16:16:17,938] {subprocess.py:93} INFO - Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=33015 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+[[34m2026-11-05T16:16:17.938+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=33015 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=[0m
+[2026-11-05 16:16:18,989] {subprocess.py:93} INFO - 26/11/05 16:16:18 WARN Utils: Your hostname, vm resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+[[34m2026-11-05T16:16:18.989+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - 26/11/05 16:16:18 WARN Utils: Your hostname, vm resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)[0m
+[2026-11-05 16:16:18,990] {subprocess.py:93} INFO - 26/11/05 16:16:18 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+[[34m2026-11-05T16:16:18.990+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - 26/11/05 16:16:18 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address[0m
+[2026-11-05 16:16:19,283] {subprocess.py:93} INFO - Setting default log level to "WARN".
+[[34m2026-11-05T16:16:19.283+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - Setting default log level to "WARN".[0m
+[2026-11-05 16:16:19,284] {subprocess.py:93} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[[34m2026-11-05T16:16:19.284+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).[0m
+[2026-11-05 16:16:19,515] {subprocess.py:93} INFO - 26/11/05 16:16:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[[34m2026-11-05T16:16:19.515+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - 26/11/05 16:16:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable[0m
+[2026-11-05 16:16:26,959] {subprocess.py:93} INFO - report written to /tmp/fleet_dag_run_92gjpvld/reports/2026-11-05/report.json: 30000 events, 45 vehicles
+[[34m2026-11-05T16:16:26.959+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - report written to /tmp/fleet_dag_run_92gjpvld/reports/2026-11-05/report.json: 30000 events, 45 vehicles[0m
+[2026-11-05 16:16:26,959] {subprocess.py:93} INFO - worst: {'vehicle_id': 'V0009', 'events': 718, 'mean_speed_kmh': 55.5, 'max_speed_kmh': 158.8, 'speeding_events': 20, 'harsh_braking_events': 30, 'risk_events': 50}
+[[34m2026-11-05T16:16:26.959+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - worst: {'vehicle_id': 'V0009', 'events': 718, 'mean_speed_kmh': 55.5, 'max_speed_kmh': 158.8, 'speeding_events': 20, 'harsh_braking_events': 30, 'risk_events': 50}[0m
+[2026-11-05 16:16:26,959] {subprocess.py:93} INFO - worst: {'vehicle_id': 'V0024', 'events': 712, 'mean_speed_kmh': 55.62, 'max_speed_kmh': 159.9, 'speeding_events': 16, 'harsh_braking_events': 32, 'risk_events': 48}
+[[34m2026-11-05T16:16:26.959+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - worst: {'vehicle_id': 'V0024', 'events': 712, 'mean_speed_kmh': 55.62, 'max_speed_kmh': 159.9, 'speeding_events': 16, 'harsh_braking_events': 32, 'risk_events': 48}[0m
+[2026-11-05 16:16:26,959] {subprocess.py:93} INFO - worst: {'vehicle_id': 'V0011', 'events': 754, 'mean_speed_kmh': 53.9, 'max_speed_kmh': 159.4, 'speeding_events': 17, 'harsh_braking_events': 31, 'risk_events': 48}
+[[34m2026-11-05T16:16:26.959+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - worst: {'vehicle_id': 'V0011', 'events': 754, 'mean_speed_kmh': 53.9, 'max_speed_kmh': 159.4, 'speeding_events': 17, 'harsh_braking_events': 31, 'risk_events': 48}[0m
+[2026-11-05 16:16:26,959] {subprocess.py:93} INFO - worst: {'vehicle_id': 'V0002', 'events': 757, 'mean_speed_kmh': 53.73, 'max_speed_kmh': 158.8, 'speeding_events': 16, 'harsh_braking_events': 27, 'risk_events': 43}
+[[34m2026-11-05T16:16:26.959+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - worst: {'vehicle_id': 'V0002', 'events': 757, 'mean_speed_kmh': 53.73, 'max_speed_kmh': 158.8, 'speeding_events': 16, 'harsh_braking_events': 27, 'risk_events': 43}[0m
+[2026-11-05 16:16:26,960] {subprocess.py:93} INFO - worst: {'vehicle_id': 'V0001', 'events': 766, 'mean_speed_kmh': 55.06, 'max_speed_kmh': 158.5, 'speeding_events': 14, 'harsh_braking_events': 29, 'risk_events': 43}
+[[34m2026-11-05T16:16:26.960+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - worst: {'vehicle_id': 'V0001', 'events': 766, 'mean_speed_kmh': 55.06, 'max_speed_kmh': 158.5, 'speeding_events': 14, 'harsh_braking_events': 29, 'risk_events': 43}[0m
+[2026-11-05 16:16:27,949] {subprocess.py:97} INFO - Command exited with return code 0
+[[34m2026-11-05T16:16:27.949+0100[0m] {[34msubprocess.py:[0m97} INFO[0m - Command exited with return code 0[0m
+[[34m2026-11-05T16:16:27.950+0100[0m] {[34mtaskinstance.py:[0m441} INFO[0m - ::group::Post task execution logs[0m
+[[34m2026-11-05T16:16:27.960+0100[0m] {[34mtaskinstance.py:[0m1206} INFO[0m - Marking task as SUCCESS. dag_id=fleet_daily_pipeline, task_id=run_report_job, run_id=manual__2026-11-05T00:00:00+00:00, execution_date=20261105T000000, start_date=, end_date=20261105T151627[0m
+[[34m2026-11-05T16:16:27.968+0100[0m] {[34mdag.py:[0m4175} INFO[0m - [DAG TEST] end task task_id=run_report_job map_index=-1[0m
+[[34m2026-11-05T16:16:27.981+0100[0m] {[34mdag.py:[0m4161} INFO[0m - [DAG TEST] starting task_id=publish_report map_index=-1[0m
+[[34m2026-11-05T16:16:27.981+0100[0m] {[34mdag.py:[0m4164} INFO[0m - [DAG TEST] running task <TaskInstance: fleet_daily_pipeline.publish_report manual__2026-11-05T00:00:00+00:00 [scheduled]>[0m
+[2026-11-05 16:16:28,000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='publish_report' AIRFLOW_CTX_EXECUTION_DATE='2026-11-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-05T00:00:00+00:00'
+[[34m2026-11-05T16:16:28.000+0100[0m] {[34mtaskinstance.py:[0m2648} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='publish_report' AIRFLOW_CTX_EXECUTION_DATE='2026-11-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-05T00:00:00+00:00'[0m
+[[34m2026-11-05T16:16:28.000+0100[0m] {[34mtaskinstance.py:[0m430} INFO[0m - ::endgroup::[0m
+report of 2026-11-05 published to daily_reports
+[2026-11-05 16:16:28,001] {python.py:237} INFO - Done. Returned value was: None
+[[34m2026-11-05T16:16:28.001+0100[0m] {[34mpython.py:[0m237} INFO[0m - Done. Returned value was: None[0m
+[[34m2026-11-05T16:16:28.001+0100[0m] {[34mtaskinstance.py:[0m441} INFO[0m - ::group::Post task execution logs[0m
+[[34m2026-11-05T16:16:28.003+0100[0m] {[34mtaskinstance.py:[0m1206} INFO[0m - Marking task as SUCCESS. dag_id=fleet_daily_pipeline, task_id=publish_report, run_id=manual__2026-11-05T00:00:00+00:00, execution_date=20261105T000000, start_date=, end_date=20261105T151628[0m
+[[34m2026-11-05T16:16:28.009+0100[0m] {[34mdag.py:[0m4175} INFO[0m - [DAG TEST] end task task_id=publish_report map_index=-1[0m
+[[34m2026-11-05T16:16:28.019+0100[0m] {[34mdag.py:[0m4161} INFO[0m - [DAG TEST] starting task_id=finish map_index=-1[0m
+[[34m2026-11-05T16:16:28.019+0100[0m] {[34mdag.py:[0m4164} INFO[0m - [DAG TEST] running task <TaskInstance: fleet_daily_pipeline.finish manual__2026-11-05T00:00:00+00:00 [scheduled]>[0m
+[2026-11-05 16:16:28,036] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='finish' AIRFLOW_CTX_EXECUTION_DATE='2026-11-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-05T00:00:00+00:00'
+[[34m2026-11-05T16:16:28.036+0100[0m] {[34mtaskinstance.py:[0m2648} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='finish' AIRFLOW_CTX_EXECUTION_DATE='2026-11-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-05T00:00:00+00:00'[0m
+[[34m2026-11-05T16:16:28.036+0100[0m] {[34mtaskinstance.py:[0m430} INFO[0m - ::endgroup::[0m
+[[34m2026-11-05T16:16:28.036+0100[0m] {[34mtaskinstance.py:[0m441} INFO[0m - ::group::Post task execution logs[0m
+[[34m2026-11-05T16:16:28.038+0100[0m] {[34mtaskinstance.py:[0m1206} INFO[0m - Marking task as SUCCESS. dag_id=fleet_daily_pipeline, task_id=finish, run_id=manual__2026-11-05T00:00:00+00:00, execution_date=20261105T000000, start_date=, end_date=20261105T151628[0m
+[[34m2026-11-05T16:16:28.043+0100[0m] {[34mdag.py:[0m4175} INFO[0m - [DAG TEST] end task task_id=finish map_index=-1[0m
+[[34m2026-11-05T16:16:28.046+0100[0m] {[34mdagrun.py:[0m850} INFO[0m - Marking run <DagRun fleet_daily_pipeline @ 2026-11-05 00:00:00+00:00: manual__2026-11-05T00:00:00+00:00, state:running, queued_at: None. externally triggered: False> successful[0m
+[[34m2026-11-05T16:16:28.046+0100[0m] {[34mdagrun.py:[0m901} INFO[0m - DagRun Finished: dag_id=fleet_daily_pipeline, execution_date=2026-11-05 00:00:00+00:00, run_id=manual__2026-11-05T00:00:00+00:00, run_start_date=2026-11-05 00:00:00+00:00, run_end_date=2026-11-05 15:16:28.046638+00:00, run_duration=54988.046638, state=success, external_trigger=False, run_type=manual, data_interval_start=2026-11-04 00:00:00+00:00, data_interval_end=2026-11-05 00:00:00+00:00, dag_hash=None[0m
+{
+ "wait_for_day_files": "success",
+ "check_topics": "success",
+ "quality_job": "success",
+ "run_report_job": "success",
+ "publish_report": "success",
+ "publish_quality_failed_alert": "skipped",
+ "finish": "success",
+ "read_verdict": "success"
+}
+PASS day 1: finish succeeded
+PASS day 1: report path ran
+PASS day 1: alert path skipped
+PASS day 1: one report published, no alert
+[[34m2026-11-05T16:16:37.960+0100[0m] {[34mdag.py:[0m4199} INFO[0m - dagrun id: fleet_daily_pipeline[0m
+[[34m2026-11-05T16:16:37.964+0100[0m] {[34mdag.py:[0m4215} INFO[0m - created dagrun <DagRun fleet_daily_pipeline @ 2026-11-06 00:00:00+00:00: manual__2026-11-06T00:00:00+00:00, state:running, queued_at: None. externally triggered: False>[0m
+[[34m2026-11-05T16:16:37.976+0100[0m] {[34mdag.py:[0m4161} INFO[0m - [DAG TEST] starting task_id=wait_for_day_files map_index=-1[0m
+[[34m2026-11-05T16:16:37.976+0100[0m] {[34mdag.py:[0m4164} INFO[0m - [DAG TEST] running task <TaskInstance: fleet_daily_pipeline.wait_for_day_files manual__2026-11-06T00:00:00+00:00 [scheduled]>[0m
+[2026-11-05 16:16:37,993] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_day_files' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T00:00:00+00:00'
+[[34m2026-11-05T16:16:37.993+0100[0m] {[34mtaskinstance.py:[0m2648} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_day_files' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T00:00:00+00:00'[0m
+[[34m2026-11-05T16:16:37.993+0100[0m] {[34mtaskinstance.py:[0m430} INFO[0m - ::endgroup::[0m
+[2026-11-05 16:16:37,995] {python.py:75} INFO - Poking callable: <function day_files_ready at 0x7f4f2467fb00>
+[[34m2026-11-05T16:16:37.995+0100[0m] {[34mpython.py:[0m75} INFO[0m - Poking callable: <function day_files_ready at 0x7f4f2467fb00>[0m
+[2026-11-05 16:16:37,995] {base.py:294} INFO - Success criteria met. Exiting.
+[[34m2026-11-05T16:16:37.995+0100[0m] {[34mbase.py:[0m294} INFO[0m - Success criteria met. Exiting.[0m
+[[34m2026-11-05T16:16:37.996+0100[0m] {[34mtaskinstance.py:[0m441} INFO[0m - ::group::Post task execution logs[0m
+[[34m2026-11-05T16:16:37.997+0100[0m] {[34mtaskinstance.py:[0m1206} INFO[0m - Marking task as SUCCESS. dag_id=fleet_daily_pipeline, task_id=wait_for_day_files, run_id=manual__2026-11-06T00:00:00+00:00, execution_date=20261106T000000, start_date=, end_date=20261105T151637[0m
+[[34m2026-11-05T16:16:38.002+0100[0m] {[34mdag.py:[0m4175} INFO[0m - [DAG TEST] end task task_id=wait_for_day_files map_index=-1[0m
+[[34m2026-11-05T16:16:38.012+0100[0m] {[34mdag.py:[0m4161} INFO[0m - [DAG TEST] starting task_id=check_topics map_index=-1[0m
+[[34m2026-11-05T16:16:38.012+0100[0m] {[34mdag.py:[0m4164} INFO[0m - [DAG TEST] running task <TaskInstance: fleet_daily_pipeline.check_topics manual__2026-11-06T00:00:00+00:00 [scheduled]>[0m
+[2026-11-05 16:16:38,028] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='check_topics' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T00:00:00+00:00'
+[[34m2026-11-05T16:16:38.028+0100[0m] {[34mtaskinstance.py:[0m2648} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='check_topics' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T00:00:00+00:00'[0m
+[[34m2026-11-05T16:16:38.028+0100[0m] {[34mtaskinstance.py:[0m430} INFO[0m - ::endgroup::[0m
+all 6 topics exist
+[2026-11-05 16:16:38,028] {python.py:237} INFO - Done. Returned value was: None
+[[34m2026-11-05T16:16:38.028+0100[0m] {[34mpython.py:[0m237} INFO[0m - Done. Returned value was: None[0m
+[[34m2026-11-05T16:16:38.028+0100[0m] {[34mtaskinstance.py:[0m441} INFO[0m - ::group::Post task execution logs[0m
+[[34m2026-11-05T16:16:38.030+0100[0m] {[34mtaskinstance.py:[0m1206} INFO[0m - Marking task as SUCCESS. dag_id=fleet_daily_pipeline, task_id=check_topics, run_id=manual__2026-11-06T00:00:00+00:00, execution_date=20261106T000000, start_date=, end_date=20261105T151638[0m
+[[34m2026-11-05T16:16:38.034+0100[0m] {[34mdag.py:[0m4175} INFO[0m - [DAG TEST] end task task_id=check_topics map_index=-1[0m
+[[34m2026-11-05T16:16:38.043+0100[0m] {[34mdag.py:[0m4161} INFO[0m - [DAG TEST] starting task_id=quality_job map_index=-1[0m
+[[34m2026-11-05T16:16:38.043+0100[0m] {[34mdag.py:[0m4164} INFO[0m - [DAG TEST] running task <TaskInstance: fleet_daily_pipeline.quality_job manual__2026-11-06T00:00:00+00:00 [scheduled]>[0m
+[2026-11-05 16:16:38,060] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='quality_job' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T00:00:00+00:00'
+[[34m2026-11-05T16:16:38.060+0100[0m] {[34mtaskinstance.py:[0m2648} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='quality_job' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T00:00:00+00:00'[0m
+[[34m2026-11-05T16:16:38.061+0100[0m] {[34mtaskinstance.py:[0m430} INFO[0m - ::endgroup::[0m
+[2026-11-05 16:16:38,061] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[[34m2026-11-05T16:16:38.061+0100[0m] {[34msubprocess.py:[0m63} INFO[0m - Tmp dir root location: /tmp[0m
+[2026-11-05 16:16:38,061] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/claude/venv_spark/bin/python spark_jobs/quality_job.py --date 2026-11-06 --events-path /tmp/fleet_dag_run_92gjpvld/parquet/events --output-dir /tmp/fleet_dag_run_92gjpvld/quality']
+[[34m2026-11-05T16:16:38.061+0100[0m] {[34msubprocess.py:[0m75} INFO[0m - Running command: ['/usr/bin/bash', '-c', '/home/claude/venv_spark/bin/python spark_jobs/quality_job.py --date 2026-11-06 --events-path /tmp/fleet_dag_run_92gjpvld/parquet/events --output-dir /tmp/fleet_dag_run_92gjpvld/quality'][0m
+[2026-11-05 16:16:38,068] {subprocess.py:86} INFO - Output:
+[[34m2026-11-05T16:16:38.068+0100[0m] {[34msubprocess.py:[0m86} INFO[0m - Output:[0m
+[2026-11-05 16:16:38,228] {subprocess.py:93} INFO - Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=33015 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+[[34m2026-11-05T16:16:38.228+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=33015 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=[0m
+[2026-11-05 16:16:38,446] {subprocess.py:93} INFO - Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=33015 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+[[34m2026-11-05T16:16:38.446+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=33015 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=[0m
+[2026-11-05 16:16:39,423] {subprocess.py:93} INFO - 26/11/05 16:16:39 WARN Utils: Your hostname, vm resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+[[34m2026-11-05T16:16:39.423+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - 26/11/05 16:16:39 WARN Utils: Your hostname, vm resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)[0m
+[2026-11-05 16:16:39,424] {subprocess.py:93} INFO - 26/11/05 16:16:39 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+[[34m2026-11-05T16:16:39.424+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - 26/11/05 16:16:39 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address[0m
+[2026-11-05 16:16:39,747] {subprocess.py:93} INFO - Setting default log level to "WARN".
+[[34m2026-11-05T16:16:39.747+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - Setting default log level to "WARN".[0m
+[2026-11-05 16:16:39,748] {subprocess.py:93} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[[34m2026-11-05T16:16:39.748+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).[0m
+[2026-11-05 16:16:39,926] {subprocess.py:93} INFO - 26/11/05 16:16:39 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[[34m2026-11-05T16:16:39.926+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - 26/11/05 16:16:39 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable[0m
+[2026-11-05 16:16:46,012] {subprocess.py:93} INFO - {
+[[34m2026-11-05T16:16:46.012+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - {[0m
+[2026-11-05 16:16:46,013] {subprocess.py:93} INFO -   "date": "2026-11-06",
+[[34m2026-11-05T16:16:46.013+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   "date": "2026-11-06",[0m
+[2026-11-05 16:16:46,013] {subprocess.py:93} INFO -   "duplicate_pct": 0.0,
+[[34m2026-11-05T16:16:46.013+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   "duplicate_pct": 0.0,[0m
+[2026-11-05 16:16:46,013] {subprocess.py:93} INFO -   "duplicate_rows": 0,
+[[34m2026-11-05T16:16:46.013+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   "duplicate_rows": 0,[0m
+[2026-11-05 16:16:46,013] {subprocess.py:93} INFO -   "duplicated_event_ids": 0,
+[[34m2026-11-05T16:16:46.013+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   "duplicated_event_ids": 0,[0m
+[2026-11-05 16:16:46,013] {subprocess.py:93} INFO -   "passed": false,
+[[34m2026-11-05T16:16:46.013+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   "passed": false,[0m
+[2026-11-05 16:16:46,013] {subprocess.py:93} INFO -   "reasons": [
+[[34m2026-11-05T16:16:46.013+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   "reasons": [[0m
+[2026-11-05 16:16:46,013] {subprocess.py:93} INFO -     "UNKNOWN region rate 19.74% > 2.0%"
+[[34m2026-11-05T16:16:46.013+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -     "UNKNOWN region rate 19.74% > 2.0%"[0m
+[2026-11-05 16:16:46,013] {subprocess.py:93} INFO -   ],
+[[34m2026-11-05T16:16:46.013+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   ],[0m
+[2026-11-05 16:16:46,013] {subprocess.py:93} INFO -   "rows": 30000,
+[[34m2026-11-05T16:16:46.013+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   "rows": 30000,[0m
+[2026-11-05 16:16:46,013] {subprocess.py:93} INFO -   "thresholds": {
+[[34m2026-11-05T16:16:46.013+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   "thresholds": {[0m
+[2026-11-05 16:16:46,013] {subprocess.py:93} INFO -     "max_duplicate_pct": 0.5,
+[[34m2026-11-05T16:16:46.013+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -     "max_duplicate_pct": 0.5,[0m
+[2026-11-05 16:16:46,014] {subprocess.py:93} INFO -     "max_unknown_pct": 2.0,
+[[34m2026-11-05T16:16:46.014+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -     "max_unknown_pct": 2.0,[0m
+[2026-11-05 16:16:46,014] {subprocess.py:93} INFO -     "min_rows": 100
+[[34m2026-11-05T16:16:46.014+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -     "min_rows": 100[0m
+[2026-11-05 16:16:46,014] {subprocess.py:93} INFO -   },
+[[34m2026-11-05T16:16:46.014+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   },[0m
+[2026-11-05 16:16:46,014] {subprocess.py:93} INFO -   "unknown_region_pct": 19.74,
+[[34m2026-11-05T16:16:46.014+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   "unknown_region_pct": 19.74,[0m
+[2026-11-05 16:16:46,014] {subprocess.py:93} INFO -   "unknown_region_rows": 5922
+[[34m2026-11-05T16:16:46.014+0100[0m] {[34msubprocess.py:[0m93} INFO[0m -   "unknown_region_rows": 5922[0m
+[2026-11-05 16:16:46,014] {subprocess.py:93} INFO - }
+[[34m2026-11-05T16:16:46.014+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - }[0m
+[2026-11-05 16:16:46,014] {subprocess.py:93} INFO - verdict written to /tmp/fleet_dag_run_92gjpvld/quality/2026-11-06/verdict.json
+[[34m2026-11-05T16:16:46.014+0100[0m] {[34msubprocess.py:[0m93} INFO[0m - verdict written to /tmp/fleet_dag_run_92gjpvld/quality/2026-11-06/verdict.json[0m
+[2026-11-05 16:16:46,841] {subprocess.py:97} INFO - Command exited with return code 0
+[[34m2026-11-05T16:16:46.841+0100[0m] {[34msubprocess.py:[0m97} INFO[0m - Command exited with return code 0[0m
+[[34m2026-11-05T16:16:46.842+0100[0m] {[34mtaskinstance.py:[0m441} INFO[0m - ::group::Post task execution logs[0m
+[[34m2026-11-05T16:16:46.851+0100[0m] {[34mtaskinstance.py:[0m1206} INFO[0m - Marking task as SUCCESS. dag_id=fleet_daily_pipeline, task_id=quality_job, run_id=manual__2026-11-06T00:00:00+00:00, execution_date=20261106T000000, start_date=, end_date=20261105T151646[0m
+[[34m2026-11-05T16:16:46.856+0100[0m] {[34mdag.py:[0m4175} INFO[0m - [DAG TEST] end task task_id=quality_job map_index=-1[0m
+[[34m2026-11-05T16:16:46.867+0100[0m] {[34mdag.py:[0m4161} INFO[0m - [DAG TEST] starting task_id=read_verdict map_index=-1[0m
+[[34m2026-11-05T16:16:46.867+0100[0m] {[34mdag.py:[0m4164} INFO[0m - [DAG TEST] running task <TaskInstance: fleet_daily_pipeline.read_verdict manual__2026-11-06T00:00:00+00:00 [scheduled]>[0m
+[2026-11-05 16:16:46,884] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='read_verdict' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T00:00:00+00:00'
+[[34m2026-11-05T16:16:46.884+0100[0m] {[34mtaskinstance.py:[0m2648} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='read_verdict' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T00:00:00+00:00'[0m
+[[34m2026-11-05T16:16:46.885+0100[0m] {[34mtaskinstance.py:[0m430} INFO[0m - ::endgroup::[0m
+[2026-11-05 16:16:46,885] {python.py:237} INFO - Done. Returned value was: publish_quality_failed_alert
+[[34m2026-11-05T16:16:46.885+0100[0m] {[34mpython.py:[0m237} INFO[0m - Done. Returned value was: publish_quality_failed_alert[0m
+[2026-11-05 16:16:46,885] {branch.py:36} INFO - Branch into publish_quality_failed_alert
+[[34m2026-11-05T16:16:46.885+0100[0m] {[34mbranch.py:[0m36} INFO[0m - Branch into publish_quality_failed_alert[0m
+[2026-11-05 16:16:46,885] {skipmixin.py:178} INFO - Following branch publish_quality_failed_alert
+[[34m2026-11-05T16:16:46.885+0100[0m] {[34mskipmixin.py:[0m178} INFO[0m - Following branch publish_quality_failed_alert[0m
+[2026-11-05 16:16:46,889] {skipmixin.py:246} INFO - Skipping tasks [('run_report_job', -1)]
+[[34m2026-11-05T16:16:46.889+0100[0m] {[34mskipmixin.py:[0m246} INFO[0m - Skipping tasks [('run_report_job', -1)][0m
+[[34m2026-11-05T16:16:46.895+0100[0m] {[34mtaskinstance.py:[0m441} INFO[0m - ::group::Post task execution logs[0m
+[[34m2026-11-05T16:16:46.901+0100[0m] {[34mtaskinstance.py:[0m1206} INFO[0m - Marking task as SUCCESS. dag_id=fleet_daily_pipeline, task_id=read_verdict, run_id=manual__2026-11-06T00:00:00+00:00, execution_date=20261106T000000, start_date=, end_date=20261105T151646[0m
+[[34m2026-11-05T16:16:46.905+0100[0m] {[34mdag.py:[0m4175} INFO[0m - [DAG TEST] end task task_id=read_verdict map_index=-1[0m
+[[34m2026-11-05T16:16:46.915+0100[0m] {[34mdag.py:[0m4161} INFO[0m - [DAG TEST] starting task_id=publish_quality_failed_alert map_index=-1[0m
+[[34m2026-11-05T16:16:46.916+0100[0m] {[34mdag.py:[0m4164} INFO[0m - [DAG TEST] running task <TaskInstance: fleet_daily_pipeline.publish_quality_failed_alert manual__2026-11-06T00:00:00+00:00 [scheduled]>[0m
+[2026-11-05 16:16:46,932] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='publish_quality_failed_alert' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T00:00:00+00:00'
+[[34m2026-11-05T16:16:46.932+0100[0m] {[34mtaskinstance.py:[0m2648} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='publish_quality_failed_alert' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T00:00:00+00:00'[0m
+[[34m2026-11-05T16:16:46.932+0100[0m] {[34mtaskinstance.py:[0m430} INFO[0m - ::endgroup::[0m
+data_quality_failed alert published for 2026-11-06: ['UNKNOWN region rate 19.74% > 2.0%']
+[2026-11-05 16:16:46,933] {python.py:237} INFO - Done. Returned value was: None
+[[34m2026-11-05T16:16:46.933+0100[0m] {[34mpython.py:[0m237} INFO[0m - Done. Returned value was: None[0m
+[[34m2026-11-05T16:16:46.933+0100[0m] {[34mtaskinstance.py:[0m441} INFO[0m - ::group::Post task execution logs[0m
+[[34m2026-11-05T16:16:46.935+0100[0m] {[34mtaskinstance.py:[0m1206} INFO[0m - Marking task as SUCCESS. dag_id=fleet_daily_pipeline, task_id=publish_quality_failed_alert, run_id=manual__2026-11-06T00:00:00+00:00, execution_date=20261106T000000, start_date=, end_date=20261105T151646[0m
+[[34m2026-11-05T16:16:46.938+0100[0m] {[34mdag.py:[0m4175} INFO[0m - [DAG TEST] end task task_id=publish_quality_failed_alert map_index=-1[0m
+[[34m2026-11-05T16:16:46.946+0100[0m] {[34mdag.py:[0m4161} INFO[0m - [DAG TEST] starting task_id=finish map_index=-1[0m
+[[34m2026-11-05T16:16:46.946+0100[0m] {[34mdag.py:[0m4164} INFO[0m - [DAG TEST] running task <TaskInstance: fleet_daily_pipeline.finish manual__2026-11-06T00:00:00+00:00 [scheduled]>[0m
+[2026-11-05 16:16:46,961] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='finish' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T00:00:00+00:00'
+[[34m2026-11-05T16:16:46.961+0100[0m] {[34mtaskinstance.py:[0m2648} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='fleet_daily_pipeline' AIRFLOW_CTX_TASK_ID='finish' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T00:00:00+00:00'[0m
+[[34m2026-11-05T16:16:46.962+0100[0m] {[34mtaskinstance.py:[0m430} INFO[0m - ::endgroup::[0m
+[[34m2026-11-05T16:16:46.962+0100[0m] {[34mtaskinstance.py:[0m441} INFO[0m - ::group::Post task execution logs[0m
+[[34m2026-11-05T16:16:46.963+0100[0m] {[34mtaskinstance.py:[0m1206} INFO[0m - Marking task as SUCCESS. dag_id=fleet_daily_pipeline, task_id=finish, run_id=manual__2026-11-06T00:00:00+00:00, execution_date=20261106T000000, start_date=, end_date=20261105T151646[0m
+[[34m2026-11-05T16:16:46.968+0100[0m] {[34mdag.py:[0m4175} INFO[0m - [DAG TEST] end task task_id=finish map_index=-1[0m
+[[34m2026-11-05T16:16:46.970+0100[0m] {[34mdagrun.py:[0m850} INFO[0m - Marking run <DagRun fleet_daily_pipeline @ 2026-11-06 00:00:00+00:00: manual__2026-11-06T00:00:00+00:00, state:running, queued_at: None. externally triggered: False> successful[0m
+[[34m2026-11-05T16:16:46.970+0100[0m] {[34mdagrun.py:[0m901} INFO[0m - DagRun Finished: dag_id=fleet_daily_pipeline, execution_date=2026-11-06 00:00:00+00:00, run_id=manual__2026-11-06T00:00:00+00:00, run_start_date=2026-11-06 00:00:00+00:00, run_end_date=2026-11-05 15:16:46.970597+00:00, run_duration=-31393.029403, state=success, external_trigger=False, run_type=manual, data_interval_start=2026-11-05 00:00:00+00:00, data_interval_end=2026-11-06 00:00:00+00:00, dag_hash=None[0m
+{
+ "wait_for_day_files": "success",
+ "check_topics": "success",
+ "quality_job": "success",
+ "run_report_job": "skipped",
+ "publish_report": "skipped",
+ "publish_quality_failed_alert": "success",
+ "finish": "success",
+ "read_verdict": "success"
+}
+PASS day 2: finish succeeded although one branch was skipped
+PASS day 2: report path skipped
+PASS day 2: data_quality_failed alert published
+alert: {"alert_id": "data_quality_failed:2026-11-06", "alert_type": "data_quality_failed", "date": "2026-11-06", "reasons": ["UNKNOWN region rate 19.74% > 2.0%"], "rows": 30000, "duplicate_pct": 0.0, "unknown_region_pct": 19.74}
+report of 2026-11-05 already in daily_reports: nothing to do
+PASS rerun: verdict.json identical (md5)
+PASS rerun: report.json identical (md5)
+PASS rerun: report not published twice
+[[34m2026-11-05T16:17:09.798+0100[0m] {[34mcrypto.py:[0m82} WARNING[0m - empty cryptography key - values will not be stored encrypted.[0m
+[[34m2026-11-05T16:17:09.807+0100[0m] {[34mdag.py:[0m4199} INFO[0m - dagrun id: kafka_lag_monitor[0m
+[[34m2026-11-05T16:17:09.811+0100[0m] {[34mdag.py:[0m4215} INFO[0m - created dagrun <DagRun kafka_lag_monitor @ 2026-11-06 10:00:00+00:00: manual__2026-11-06T10:00:00+00:00, state:running, queued_at: None. externally triggered: False>[0m
+[[34m2026-11-05T16:17:09.821+0100[0m] {[34mdag.py:[0m4161} INFO[0m - [DAG TEST] starting task_id=measure_lag map_index=-1[0m
+[[34m2026-11-05T16:17:09.821+0100[0m] {[34mdag.py:[0m4164} INFO[0m - [DAG TEST] running task <TaskInstance: kafka_lag_monitor.measure_lag manual__2026-11-06T10:00:00+00:00 [scheduled]>[0m
+[2026-11-05 16:17:09,837] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='kafka_lag_monitor' AIRFLOW_CTX_TASK_ID='measure_lag' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T10:00:00+00:00'
+[[34m2026-11-05T16:17:09.837+0100[0m] {[34mtaskinstance.py:[0m2648} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='kafka_lag_monitor' AIRFLOW_CTX_TASK_ID='measure_lag' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T10:00:00+00:00'[0m
+[[34m2026-11-05T16:17:09.838+0100[0m] {[34mtaskinstance.py:[0m430} INFO[0m - ::endgroup::[0m
+lag of alerts-notifier on alerts: {0: 3, 1: 2, 2: 4}
+[2026-11-05 16:17:09,838] {python.py:237} INFO - Done. Returned value was: {'0': 3, '1': 2, '2': 4}
+[[34m2026-11-05T16:17:09.838+0100[0m] {[34mpython.py:[0m237} INFO[0m - Done. Returned value was: {'0': 3, '1': 2, '2': 4}[0m
+[[34m2026-11-05T16:17:09.838+0100[0m] {[34mtaskinstance.py:[0m441} INFO[0m - ::group::Post task execution logs[0m
+[[34m2026-11-05T16:17:09.844+0100[0m] {[34mtaskinstance.py:[0m1206} INFO[0m - Marking task as SUCCESS. dag_id=kafka_lag_monitor, task_id=measure_lag, run_id=manual__2026-11-06T10:00:00+00:00, execution_date=20261106T100000, start_date=, end_date=20261105T151709[0m
+[[34m2026-11-05T16:17:09.848+0100[0m] {[34mdag.py:[0m4175} INFO[0m - [DAG TEST] end task task_id=measure_lag map_index=-1[0m
+[[34m2026-11-05T16:17:09.857+0100[0m] {[34mdag.py:[0m4161} INFO[0m - [DAG TEST] starting task_id=check_threshold map_index=-1[0m
+[[34m2026-11-05T16:17:09.857+0100[0m] {[34mdag.py:[0m4164} INFO[0m - [DAG TEST] running task <TaskInstance: kafka_lag_monitor.check_threshold manual__2026-11-06T10:00:00+00:00 [scheduled]>[0m
+[2026-11-05 16:17:09,874] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='kafka_lag_monitor' AIRFLOW_CTX_TASK_ID='check_threshold' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T10:00:00+00:00'
+[[34m2026-11-05T16:17:09.874+0100[0m] {[34mtaskinstance.py:[0m2648} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='kafka_lag_monitor' AIRFLOW_CTX_TASK_ID='check_threshold' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T10:00:00+00:00'[0m
+[[34m2026-11-05T16:17:09.874+0100[0m] {[34mtaskinstance.py:[0m430} INFO[0m - ::endgroup::[0m
+worst partition lag = 4, threshold = 50
+[2026-11-05 16:17:09,877] {python.py:237} INFO - Done. Returned value was: lag_ok
+[[34m2026-11-05T16:17:09.877+0100[0m] {[34mpython.py:[0m237} INFO[0m - Done. Returned value was: lag_ok[0m
+[2026-11-05 16:17:09,877] {branch.py:36} INFO - Branch into lag_ok
+[[34m2026-11-05T16:17:09.877+0100[0m] {[34mbranch.py:[0m36} INFO[0m - Branch into lag_ok[0m
+[2026-11-05 16:17:09,877] {skipmixin.py:178} INFO - Following branch lag_ok
+[[34m2026-11-05T16:17:09.877+0100[0m] {[34mskipmixin.py:[0m178} INFO[0m - Following branch lag_ok[0m
+[2026-11-05 16:17:09,880] {skipmixin.py:246} INFO - Skipping tasks [('publish_lag_alert', -1)]
+[[34m2026-11-05T16:17:09.880+0100[0m] {[34mskipmixin.py:[0m246} INFO[0m - Skipping tasks [('publish_lag_alert', -1)][0m
+[[34m2026-11-05T16:17:09.887+0100[0m] {[34mtaskinstance.py:[0m441} INFO[0m - ::group::Post task execution logs[0m
+[[34m2026-11-05T16:17:09.892+0100[0m] {[34mtaskinstance.py:[0m1206} INFO[0m - Marking task as SUCCESS. dag_id=kafka_lag_monitor, task_id=check_threshold, run_id=manual__2026-11-06T10:00:00+00:00, execution_date=20261106T100000, start_date=, end_date=20261105T151709[0m
+[[34m2026-11-05T16:17:09.895+0100[0m] {[34mdag.py:[0m4175} INFO[0m - [DAG TEST] end task task_id=check_threshold map_index=-1[0m
+[[34m2026-11-05T16:17:09.904+0100[0m] {[34mdag.py:[0m4161} INFO[0m - [DAG TEST] starting task_id=lag_ok map_index=-1[0m
+[[34m2026-11-05T16:17:09.904+0100[0m] {[34mdag.py:[0m4164} INFO[0m - [DAG TEST] running task <TaskInstance: kafka_lag_monitor.lag_ok manual__2026-11-06T10:00:00+00:00 [scheduled]>[0m
+[2026-11-05 16:17:09,919] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='kafka_lag_monitor' AIRFLOW_CTX_TASK_ID='lag_ok' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T10:00:00+00:00'
+[[34m2026-11-05T16:17:09.919+0100[0m] {[34mtaskinstance.py:[0m2648} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='kafka_lag_monitor' AIRFLOW_CTX_TASK_ID='lag_ok' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T10:00:00+00:00'[0m
+[[34m2026-11-05T16:17:09.919+0100[0m] {[34mtaskinstance.py:[0m430} INFO[0m - ::endgroup::[0m
+[[34m2026-11-05T16:17:09.919+0100[0m] {[34mtaskinstance.py:[0m441} INFO[0m - ::group::Post task execution logs[0m
+[[34m2026-11-05T16:17:09.921+0100[0m] {[34mtaskinstance.py:[0m1206} INFO[0m - Marking task as SUCCESS. dag_id=kafka_lag_monitor, task_id=lag_ok, run_id=manual__2026-11-06T10:00:00+00:00, execution_date=20261106T100000, start_date=, end_date=20261105T151709[0m
+[[34m2026-11-05T16:17:09.925+0100[0m] {[34mdag.py:[0m4175} INFO[0m - [DAG TEST] end task task_id=lag_ok map_index=-1[0m
+[[34m2026-11-05T16:17:09.928+0100[0m] {[34mdagrun.py:[0m850} INFO[0m - Marking run <DagRun kafka_lag_monitor @ 2026-11-06 10:00:00+00:00: manual__2026-11-06T10:00:00+00:00, state:running, queued_at: None. externally triggered: False> successful[0m
+[[34m2026-11-05T16:17:09.928+0100[0m] {[34mdagrun.py:[0m901} INFO[0m - DagRun Finished: dag_id=kafka_lag_monitor, execution_date=2026-11-06 10:00:00+00:00, run_id=manual__2026-11-06T10:00:00+00:00, run_start_date=2026-11-06 10:00:00+00:00, run_end_date=2026-11-05 15:17:09.928193+00:00, run_duration=-67370.071807, state=success, external_trigger=False, run_type=manual, data_interval_start=2026-11-06 09:55:00+00:00, data_interval_end=2026-11-06 10:00:00+00:00, dag_hash=None[0m
+PASS lag 3/2/4 below threshold 50: no alert
+[[34m2026-11-05T16:17:09.937+0100[0m] {[34mdag.py:[0m4199} INFO[0m - dagrun id: kafka_lag_monitor[0m
+[[34m2026-11-05T16:17:09.940+0100[0m] {[34mdag.py:[0m4215} INFO[0m - created dagrun <DagRun kafka_lag_monitor @ 2026-11-06 10:05:00+00:00: manual__2026-11-06T10:05:00+00:00, state:running, queued_at: None. externally triggered: False>[0m
+[[34m2026-11-05T16:17:09.948+0100[0m] {[34mdag.py:[0m4161} INFO[0m - [DAG TEST] starting task_id=measure_lag map_index=-1[0m
+[[34m2026-11-05T16:17:09.949+0100[0m] {[34mdag.py:[0m4164} INFO[0m - [DAG TEST] running task <TaskInstance: kafka_lag_monitor.measure_lag manual__2026-11-06T10:05:00+00:00 [scheduled]>[0m
+[2026-11-05 16:17:09,965] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='kafka_lag_monitor' AIRFLOW_CTX_TASK_ID='measure_lag' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T10:05:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T10:05:00+00:00'
+[[34m2026-11-05T16:17:09.965+0100[0m] {[34mtaskinstance.py:[0m2648} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='kafka_lag_monitor' AIRFLOW_CTX_TASK_ID='measure_lag' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T10:05:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T10:05:00+00:00'[0m
+[[34m2026-11-05T16:17:09.966+0100[0m] {[34mtaskinstance.py:[0m430} INFO[0m - ::endgroup::[0m
+lag of alerts-notifier on alerts: {0: 120, 1: 2, 2: 4}
+[2026-11-05 16:17:09,966] {python.py:237} INFO - Done. Returned value was: {'0': 120, '1': 2, '2': 4}
+[[34m2026-11-05T16:17:09.966+0100[0m] {[34mpython.py:[0m237} INFO[0m - Done. Returned value was: {'0': 120, '1': 2, '2': 4}[0m
+[[34m2026-11-05T16:17:09.966+0100[0m] {[34mtaskinstance.py:[0m441} INFO[0m - ::group::Post task execution logs[0m
+[[34m2026-11-05T16:17:09.972+0100[0m] {[34mtaskinstance.py:[0m1206} INFO[0m - Marking task as SUCCESS. dag_id=kafka_lag_monitor, task_id=measure_lag, run_id=manual__2026-11-06T10:05:00+00:00, execution_date=20261106T100500, start_date=, end_date=20261105T151709[0m
+[[34m2026-11-05T16:17:09.975+0100[0m] {[34mdag.py:[0m4175} INFO[0m - [DAG TEST] end task task_id=measure_lag map_index=-1[0m
+[[34m2026-11-05T16:17:09.984+0100[0m] {[34mdag.py:[0m4161} INFO[0m - [DAG TEST] starting task_id=check_threshold map_index=-1[0m
+[[34m2026-11-05T16:17:09.984+0100[0m] {[34mdag.py:[0m4164} INFO[0m - [DAG TEST] running task <TaskInstance: kafka_lag_monitor.check_threshold manual__2026-11-06T10:05:00+00:00 [scheduled]>[0m
+[2026-11-05 16:17:10,002] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='kafka_lag_monitor' AIRFLOW_CTX_TASK_ID='check_threshold' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T10:05:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T10:05:00+00:00'
+[[34m2026-11-05T16:17:10.002+0100[0m] {[34mtaskinstance.py:[0m2648} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='kafka_lag_monitor' AIRFLOW_CTX_TASK_ID='check_threshold' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T10:05:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T10:05:00+00:00'[0m
+[[34m2026-11-05T16:17:10.002+0100[0m] {[34mtaskinstance.py:[0m430} INFO[0m - ::endgroup::[0m
+worst partition lag = 120, threshold = 50
+[2026-11-05 16:17:10,003] {python.py:237} INFO - Done. Returned value was: publish_lag_alert
+[[34m2026-11-05T16:17:10.003+0100[0m] {[34mpython.py:[0m237} INFO[0m - Done. Returned value was: publish_lag_alert[0m
+[2026-11-05 16:17:10,004] {branch.py:36} INFO - Branch into publish_lag_alert
+[[34m2026-11-05T16:17:10.004+0100[0m] {[34mbranch.py:[0m36} INFO[0m - Branch into publish_lag_alert[0m
+[2026-11-05 16:17:10,004] {skipmixin.py:178} INFO - Following branch publish_lag_alert
+[[34m2026-11-05T16:17:10.004+0100[0m] {[34mskipmixin.py:[0m178} INFO[0m - Following branch publish_lag_alert[0m
+[2026-11-05 16:17:10,007] {skipmixin.py:246} INFO - Skipping tasks [('lag_ok', -1)]
+[[34m2026-11-05T16:17:10.007+0100[0m] {[34mskipmixin.py:[0m246} INFO[0m - Skipping tasks [('lag_ok', -1)][0m
+[[34m2026-11-05T16:17:10.014+0100[0m] {[34mtaskinstance.py:[0m441} INFO[0m - ::group::Post task execution logs[0m
+[[34m2026-11-05T16:17:10.019+0100[0m] {[34mtaskinstance.py:[0m1206} INFO[0m - Marking task as SUCCESS. dag_id=kafka_lag_monitor, task_id=check_threshold, run_id=manual__2026-11-06T10:05:00+00:00, execution_date=20261106T100500, start_date=, end_date=20261105T151710[0m
+[[34m2026-11-05T16:17:10.023+0100[0m] {[34mdag.py:[0m4175} INFO[0m - [DAG TEST] end task task_id=check_threshold map_index=-1[0m
+[[34m2026-11-05T16:17:10.031+0100[0m] {[34mdag.py:[0m4161} INFO[0m - [DAG TEST] starting task_id=publish_lag_alert map_index=-1[0m
+[[34m2026-11-05T16:17:10.032+0100[0m] {[34mdag.py:[0m4164} INFO[0m - [DAG TEST] running task <TaskInstance: kafka_lag_monitor.publish_lag_alert manual__2026-11-06T10:05:00+00:00 [scheduled]>[0m
+[2026-11-05 16:17:10,049] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='kafka_lag_monitor' AIRFLOW_CTX_TASK_ID='publish_lag_alert' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T10:05:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T10:05:00+00:00'
+[[34m2026-11-05T16:17:10.049+0100[0m] {[34mtaskinstance.py:[0m2648} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fleet' AIRFLOW_CTX_DAG_ID='kafka_lag_monitor' AIRFLOW_CTX_TASK_ID='publish_lag_alert' AIRFLOW_CTX_EXECUTION_DATE='2026-11-06T10:05:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-11-06T10:05:00+00:00'[0m
+[[34m2026-11-05T16:17:10.050+0100[0m] {[34mtaskinstance.py:[0m430} INFO[0m - ::endgroup::[0m
+consumer_lag_high published: {'0': 120}
+[2026-11-05 16:17:10,051] {python.py:237} INFO - Done. Returned value was: None
+[[34m2026-11-05T16:17:10.051+0100[0m] {[34mpython.py:[0m237} INFO[0m - Done. Returned value was: None[0m
+[[34m2026-11-05T16:17:10.051+0100[0m] {[34mtaskinstance.py:[0m441} INFO[0m - ::group::Post task execution logs[0m
+[[34m2026-11-05T16:17:10.053+0100[0m] {[34mtaskinstance.py:[0m1206} INFO[0m - Marking task as SUCCESS. dag_id=kafka_lag_monitor, task_id=publish_lag_alert, run_id=manual__2026-11-06T10:05:00+00:00, execution_date=20261106T100500, start_date=, end_date=20261105T151710[0m
+[[34m2026-11-05T16:17:10.057+0100[0m] {[34mdag.py:[0m4175} INFO[0m - [DAG TEST] end task task_id=publish_lag_alert map_index=-1[0m
+[[34m2026-11-05T16:17:10.059+0100[0m] {[34mdagrun.py:[0m850} INFO[0m - Marking run <DagRun kafka_lag_monitor @ 2026-11-06 10:05:00+00:00: manual__2026-11-06T10:05:00+00:00, state:running, queued_at: None. externally triggered: False> successful[0m
+[[34m2026-11-05T16:17:10.060+0100[0m] {[34mdagrun.py:[0m901} INFO[0m - DagRun Finished: dag_id=kafka_lag_monitor, execution_date=2026-11-06 10:05:00+00:00, run_id=manual__2026-11-06T10:05:00+00:00, run_start_date=2026-11-06 10:05:00+00:00, run_end_date=2026-11-05 15:17:10.060085+00:00, run_duration=-67669.939915, state=success, external_trigger=False, run_type=manual, data_interval_start=2026-11-06 10:00:00+00:00, data_interval_end=2026-11-06 10:05:00+00:00, dag_hash=None[0m
+PASS lag 120 on partition 0: consumer_lag_high published
+PASS alert names the late partition
+alert: {"alert_id": "consumer_lag_high:20261106T1005", "alert_type": "consumer_lag_high", "group": "alerts-notifier", "topic": "alerts", "threshold": 50, "lag_by_partition": {"0": 120, "1": 2, "2": 4}, "partitions_over_threshold": ["0"]}
+ALL CHECKS PASSED
+
+real	1m12.308s
+user	0m5.786s
+sys	0m0.777s

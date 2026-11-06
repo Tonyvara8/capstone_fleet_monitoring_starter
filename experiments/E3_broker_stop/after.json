@@ -1,0 +1,11 @@
+{
+  "label": "E3_broker_stop/after",
+  "taken_at": "2026-11-06T22:19:04+0100",
+  "parquet_rows": 109531,
+  "parquet_distinct_event_ids": 109531,
+  "parquet_duplicate_rows": 0,
+  "alerts_messages": 1814,
+  "alerts_distinct_alert_ids": 1814,
+  "alerts_duplicated_messages": 0,
+  "dlq_messages": 613
+}

@@ -1,0 +1,23 @@
+%6|1793999220.170|FAIL|rdkafka#producer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/1: Disconnected (after 284687ms in state UP)
+%6|1793999220.754|FAIL|rdkafka#producer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/1: Disconnected while requesting ApiVersion: might be caused by incorrect security.protocol configuration (connecting to a SSL listener?) or broker version is < 0.10 (see api.version.request) (after 0ms in state APIVERSION_QUERY)
+%6|1793999220.856|FAIL|rdkafka#producer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/1: Disconnected while requesting ApiVersion: might be caused by incorrect security.protocol configuration (connecting to a SSL listener?) or broker version is < 0.10 (see api.version.request) (after 0ms in state APIVERSION_QUERY, 1 identical error(s) suppressed)
+%3|1793999226.785|FAIL|rdkafka#producer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/1: Connect to ipv6#[::1]:9092 failed: Unknown error (after 2023ms in state CONNECT)
+%3|1793999232.498|FAIL|rdkafka#producer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/1: Connect to ipv4#127.0.0.1:9092 failed: Unknown error (after 2029ms in state CONNECT)
+%6|1793999309.210|FAIL|rdkafka#producer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/1: Disconnected (after 66742ms in state UP)
+%6|1793999309.457|FAIL|rdkafka#producer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/1: Disconnected while requesting ApiVersion: might be caused by incorrect security.protocol configuration (connecting to a SSL listener?) or broker version is < 0.10 (see api.version.request) (after 3ms in state APIVERSION_QUERY)
+%6|1793999309.616|FAIL|rdkafka#producer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/1: Disconnected while requesting ApiVersion: might be caused by incorrect security.protocol configuration (connecting to a SSL listener?) or broker version is < 0.10 (see api.version.request) (after 2ms in state APIVERSION_QUERY, 1 identical error(s) suppressed)
+%3|1793999317.147|FAIL|rdkafka#producer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/1: Connect to ipv4#127.0.0.1:9092 failed: Unknown error (after 2022ms in state CONNECT)
+%3|1793999329.182|FAIL|rdkafka#producer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/1: Connect to ipv6#[::1]:9092 failed: Unknown error (after 2020ms in state CONNECT)
+%3|1793999351.262|FAIL|rdkafka#producer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/1: Connect to ipv6#[::1]:9092 failed: Unknown error (after 2048ms in state CONNECT, 2 identical error(s) suppressed)
+%3|1793999361.230|FAIL|rdkafka#producer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/1: Connect to ipv4#127.0.0.1:9092 failed: Unknown error (after 2016ms in state CONNECT)
+run 759e9bf5: streaming ~20 events/s (hot vehicle: False, unknown vehicles: False). Ctrl+C to stop.
+sustained speeding episode started for V0021
+Traceback (most recent call last):
+  File "C:\capstone\producers\produce_vehicle_events.py", line 166, in <module>
+    main()
+  File "C:\capstone\producers\produce_vehicle_events.py", line 160, in main
+    remaining = producer.flush(30)
+                ^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+%4|1793999377.366|TERMINATE|rdkafka#producer-1| [thrd:app]: Producer terminating with 767 messages (165520 bytes) still in queue or transit: use flush() to wait for outstanding message delivery
+^C

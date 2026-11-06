@@ -1,0 +1,13 @@
+.venv/
+.venv-airflow/
+.airflow/
+checkpoints/
+data/
+__pycache__/
+*.pyc
+spark-warehouse/
+metastore_db/
+derby.log
+report/*.aux
+report/*.log
+report/*.out

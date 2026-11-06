@@ -1,0 +1,32 @@
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=33015 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=33015 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+26/11/05 16:14:16 WARN Utils: Your hostname, vm resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/05 16:14:16 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/05 16:14:16 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+== Physical Plan ==
+* ColumnarToRow (2)
++- Scan parquet  (1)
+
+
+(1) Scan parquet 
+Output [11]: [event_id#0, vehicle_id#1, event_time#2, latitude#3, longitude#4, speed_kmh#5, fuel_level_pct#6, harsh_braking#7, region#8, event_date#9, batch_id#10]
+Batched: true
+Location: InMemoryFileIndex [file:/tmp/claude-0/-home-claude/53d8023a-c2f5-5c2d-a93b-49a494587148/scratchpad/sample/events]
+PartitionFilters: [isnotnull(event_date#9), (event_date#9 = 2026-11-05)]
+ReadSchema: struct<event_id:string,vehicle_id:string,event_time:timestamp,latitude:double,longitude:double,speed_kmh:double,fuel_level_pct:double,harsh_braking:boolean,region:string>
+
+(2) ColumnarToRow [codegen id : 1]
+Input [11]: [event_id#0, vehicle_id#1, event_time#2, latitude#3, longitude#4, speed_kmh#5, fuel_level_pct#6, harsh_braking#7, region#8, event_date#9, batch_id#10]
+
+
+event_date directories actually scanned: ['2026-11-05']
+report written to /tmp/claude-0/-home-claude/53d8023a-c2f5-5c2d-a93b-49a494587148/scratchpad/sample/reports_ui/2026-11-05/report.json: 100000 events, 45 vehicles
+worst: {'vehicle_id': 'V0014', 'events': 2513, 'mean_speed_kmh': 54.52, 'max_speed_kmh': 158.9, 'speeding_events': 48, 'harsh_braking_events': 84, 'risk_events': 132}
+worst: {'vehicle_id': 'V0011', 'events': 2456, 'mean_speed_kmh': 52.86, 'max_speed_kmh': 159.4, 'speeding_events': 42, 'harsh_braking_events': 84, 'risk_events': 126}
+worst: {'vehicle_id': 'V0028', 'events': 2546, 'mean_speed_kmh': 54.65, 'max_speed_kmh': 159.2, 'speeding_events': 49, 'harsh_braking_events': 74, 'risk_events': 123}
+worst: {'vehicle_id': 'V0033', 'events': 2489, 'mean_speed_kmh': 53.96, 'max_speed_kmh': 159.9, 'speeding_events': 41, 'harsh_braking_events': 81, 'risk_events': 122}
+worst: {'vehicle_id': 'V0039', 'events': 2454, 'mean_speed_kmh': 54.43, 'max_speed_kmh': 159.5, 'speeding_events': 45, 'harsh_braking_events': 75, 'risk_events': 120}
+Spark UI at http://192.0.2.2:4040 for 90s
+26/11/05 16:14:27 WARN GarbageCollectionMetrics: To enable non-built-in garbage collector(s) List(G1 Concurrent GC), users should configure it(them) to spark.eventLog.gcMetrics.youngGenerationGarbageCollectors or spark.eventLog.gcMetrics.oldGenerationGarbageCollectors

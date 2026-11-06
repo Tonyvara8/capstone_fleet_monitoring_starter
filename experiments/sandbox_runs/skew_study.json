@@ -1,0 +1,322 @@
+[
+  {
+    "config": "aggregate_plain_aqe_off",
+    "seconds_median": 0.87,
+    "seconds_all": [
+      1.04,
+      0.81,
+      0.87
+    ],
+    "stages": [
+      {
+        "stage_id": 19,
+        "name": "save at NativeMethodAccessorImpl.java:0",
+        "tasks": 8,
+        "task_ms_min": 90.0,
+        "task_ms_median": 146.0,
+        "task_ms_max": 192.0,
+        "max_over_median": 1.32,
+        "records_read_max": 76.0,
+        "records_read_median": 75.0
+      },
+      {
+        "stage_id": 20,
+        "name": "save at NativeMethodAccessorImpl.java:0",
+        "tasks": 8,
+        "task_ms_min": 4.0,
+        "task_ms_median": 10.0,
+        "task_ms_max": 16.0,
+        "max_over_median": 1.6,
+        "records_read_max": 80.0,
+        "records_read_median": 40.0
+      }
+    ],
+    "aqe": false,
+    "skew_join_handling": false,
+    "broadcast_allowed": true,
+    "rows": 6000000,
+    "hot_share_pct": 41.1
+  },
+  {
+    "config": "aggregate_plain_aqe_on",
+    "seconds_median": 0.97,
+    "seconds_all": [
+      1.04,
+      0.97,
+      0.87
+    ],
+    "stages": [
+      {
+        "stage_id": 40,
+        "name": "save at NativeMethodAccessorImpl.java:0",
+        "tasks": 8,
+        "task_ms_min": 3.0,
+        "task_ms_median": 4.0,
+        "task_ms_max": 20.0,
+        "max_over_median": 5.0,
+        "records_read_max": 80.0,
+        "records_read_median": 40.0
+      }
+    ],
+    "aqe": true,
+    "skew_join_handling": false,
+    "broadcast_allowed": true,
+    "rows": 6000000,
+    "hot_share_pct": 41.1
+  },
+  {
+    "config": "aggregate_salted8_aqe_off",
+    "seconds_median": 1.56,
+    "seconds_all": [
+      1.56,
+      1.57,
+      1.31
+    ],
+    "stages": [
+      {
+        "stage_id": 56,
+        "name": "save at NativeMethodAccessorImpl.java:0",
+        "tasks": 8,
+        "task_ms_min": 4.0,
+        "task_ms_median": 6.0,
+        "task_ms_max": 14.0,
+        "max_over_median": 2.33,
+        "records_read_max": 53.0,
+        "records_read_median": 28.0
+      },
+      {
+        "stage_id": 54,
+        "name": "save at NativeMethodAccessorImpl.java:0",
+        "tasks": 8,
+        "task_ms_min": 84.0,
+        "task_ms_median": 161.0,
+        "task_ms_max": 408.0,
+        "max_over_median": 2.53,
+        "records_read_max": 76.0,
+        "records_read_median": 75.0
+      },
+      {
+        "stage_id": 55,
+        "name": "save at NativeMethodAccessorImpl.java:0",
+        "tasks": 8,
+        "task_ms_min": 10.0,
+        "task_ms_median": 19.0,
+        "task_ms_max": 25.0,
+        "max_over_median": 1.32,
+        "records_read_max": 408.0,
+        "records_read_median": 384.0
+      }
+    ],
+    "aqe": false,
+    "skew_join_handling": false,
+    "broadcast_allowed": true,
+    "rows": 6000000,
+    "hot_share_pct": 41.1
+  },
+  {
+    "config": "join_broadcast_aqe_off",
+    "seconds_median": 1.59,
+    "seconds_all": [
+      1.59,
+      1.67,
+      1.52
+    ],
+    "stages": [
+      {
+        "stage_id": 68,
+        "name": "save at NativeMethodAccessorImpl.java:0",
+        "tasks": 8,
+        "task_ms_min": 306.0,
+        "task_ms_median": 337.0,
+        "task_ms_max": 355.0,
+        "max_over_median": 1.05,
+        "records_read_max": 76.0,
+        "records_read_median": 75.0
+      }
+    ],
+    "aqe": false,
+    "skew_join_handling": false,
+    "broadcast_allowed": true,
+    "rows": 6000000,
+    "hot_share_pct": 41.1
+  },
+  {
+    "config": "join_smj_aqe_off",
+    "seconds_median": 4.5,
+    "seconds_all": [
+      4.5,
+      4.4,
+      4.95
+    ],
+    "stages": [
+      {
+        "stage_id": 84,
+        "name": "save at <unknown>:0",
+        "tasks": 8,
+        "task_ms_min": 221.0,
+        "task_ms_median": 577.0,
+        "task_ms_max": 2857.0,
+        "max_over_median": 4.95,
+        "records_read_max": 2730826.0,
+        "records_read_median": 457788.0
+      },
+      {
+        "stage_id": 81,
+        "name": "save at <unknown>:0",
+        "tasks": 2,
+        "task_ms_min": 8.0,
+        "task_ms_median": 16.0,
+        "task_ms_max": 16.0,
+        "max_over_median": 1.0,
+        "records_read_max": 1.0,
+        "records_read_median": 1.0
+      },
+      {
+        "stage_id": 83,
+        "name": "save at <unknown>:0",
+        "tasks": 8,
+        "task_ms_min": 331.0,
+        "task_ms_median": 373.0,
+        "task_ms_max": 409.0,
+        "max_over_median": 1.1,
+        "records_read_max": 76.0,
+        "records_read_median": 75.0
+      }
+    ],
+    "aqe": false,
+    "skew_join_handling": false,
+    "broadcast_allowed": false,
+    "rows": 6000000,
+    "hot_share_pct": 41.1
+  },
+  {
+    "config": "join_smj_aqe_on_no_skew_handling",
+    "seconds_median": 4.52,
+    "seconds_all": [
+      5.0,
+      4.52,
+      4.32
+    ],
+    "stages": [
+      {
+        "stage_id": 112,
+        "name": "save at <unknown>:0",
+        "tasks": 8,
+        "task_ms_min": 190.0,
+        "task_ms_median": 328.0,
+        "task_ms_max": 2161.0,
+        "max_over_median": 6.59,
+        "records_read_max": 2730826.0,
+        "records_read_median": 457788.0
+      }
+    ],
+    "aqe": true,
+    "skew_join_handling": false,
+    "broadcast_allowed": false,
+    "rows": 6000000,
+    "hot_share_pct": 41.1
+  },
+  {
+    "config": "join_smj_aqe_skew_join_factor5",
+    "seconds_median": 4.03,
+    "seconds_all": [
+      3.63,
+      4.03,
+      4.04
+    ],
+    "stages": [
+      {
+        "stage_id": 140,
+        "name": "save at <unknown>:0",
+        "tasks": 8,
+        "task_ms_min": 168.0,
+        "task_ms_median": 271.0,
+        "task_ms_max": 2429.0,
+        "max_over_median": 8.96,
+        "records_read_max": 2730826.0,
+        "records_read_median": 457788.0
+      }
+    ],
+    "aqe": true,
+    "skew_join_handling": true,
+    "broadcast_allowed": false,
+    "rows": 6000000,
+    "hot_share_pct": 41.1
+  },
+  {
+    "config": "join_smj_aqe_skew_join_factor2",
+    "seconds_median": 3.89,
+    "seconds_all": [
+      3.89,
+      4.4,
+      3.58
+    ],
+    "stages": [
+      {
+        "stage_id": 168,
+        "name": "save at <unknown>:0",
+        "tasks": 17,
+        "task_ms_min": 132.0,
+        "task_ms_median": 189.0,
+        "task_ms_max": 536.0,
+        "max_over_median": 2.84,
+        "records_read_max": 569701.0,
+        "records_read_median": 341455.0
+      }
+    ],
+    "aqe": true,
+    "skew_join_handling": true,
+    "broadcast_allowed": false,
+    "rows": 6000000,
+    "hot_share_pct": 41.1
+  },
+  {
+    "config": "join_smj_salted8_aqe_off",
+    "seconds_median": 4.82,
+    "seconds_all": [
+      4.83,
+      4.82,
+      4.73
+    ],
+    "stages": [
+      {
+        "stage_id": 183,
+        "name": "save at <unknown>:0",
+        "tasks": 2,
+        "task_ms_min": 5.0,
+        "task_ms_median": 6.0,
+        "task_ms_max": 6.0,
+        "max_over_median": 1.0,
+        "records_read_max": 1.0,
+        "records_read_median": 1.0
+      },
+      {
+        "stage_id": 184,
+        "name": "save at <unknown>:0",
+        "tasks": 8,
+        "task_ms_min": 348.0,
+        "task_ms_median": 931.0,
+        "task_ms_max": 1205.0,
+        "max_over_median": 1.29,
+        "records_read_max": 1113520.0,
+        "records_read_median": 1001903.0
+      },
+      {
+        "stage_id": 182,
+        "name": "save at <unknown>:0",
+        "tasks": 8,
+        "task_ms_min": 350.0,
+        "task_ms_median": 394.0,
+        "task_ms_max": 457.0,
+        "max_over_median": 1.16,
+        "records_read_max": 76.0,
+        "records_read_median": 75.0
+      }
+    ],
+    "aqe": false,
+    "skew_join_handling": false,
+    "broadcast_allowed": false,
+    "rows": 6000000,
+    "hot_share_pct": 41.1
+  }
+]

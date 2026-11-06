@@ -1,0 +1,246 @@
+:: loading settings :: url = jar:file:/C:/capstone/.venv/Lib/site-packages/pyspark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: C:\Users\rayan\.ivy2\cache
+The jars for the packages stored in: C:\Users\rayan\.ivy2\jars
+org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-dc8087c3-9d09-4623-807d-893716ddffa5;1.0
+	confs: [default]
+	found org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 in central
+	found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 in central
+	found org.apache.kafka#kafka-clients;3.4.1 in central
+	found org.lz4#lz4-java;1.8.0 in central
+	found org.xerial.snappy#snappy-java;1.1.10.3 in central
+	found org.slf4j#slf4j-api;2.0.7 in central
+	found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+	found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+	found commons-logging#commons-logging;1.1.3 in central
+	found com.google.code.findbugs#jsr305;3.0.0 in central
+	found org.apache.commons#commons-pool2;2.11.1 in central
+:: resolution report :: resolve 400ms :: artifacts dl 28ms
+	:: modules in use:
+	com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+	commons-logging#commons-logging;1.1.3 from central in [default]
+	org.apache.commons#commons-pool2;2.11.1 from central in [default]
+	org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+	org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+	org.apache.kafka#kafka-clients;3.4.1 from central in [default]
+	org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 from central in [default]
+	org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 from central in [default]
+	org.lz4#lz4-java;1.8.0 from central in [default]
+	org.slf4j#slf4j-api;2.0.7 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.10.3 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   11  |   0   |   0   |   0   ||   11  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-dc8087c3-9d09-4623-807d-893716ddffa5
+	confs: [default]
+	0 artifacts copied, 11 already retrieved (0kB/13ms)
+26/11/06 23:14:38 INFO SparkContext: Running Spark version 3.5.1
+26/11/06 23:14:38 INFO SparkContext: OS info Windows 11, 10.0, amd64
+26/11/06 23:14:38 INFO SparkContext: Java version 17.0.17
+26/11/06 23:14:38 INFO ResourceUtils: ==============================================================
+26/11/06 23:14:38 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/11/06 23:14:38 INFO ResourceUtils: ==============================================================
+26/11/06 23:14:38 INFO SparkContext: Submitted application: FleetMonitoringValidation
+26/11/06 23:14:38 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/11/06 23:14:38 INFO ResourceProfile: Limiting resource is cpu
+26/11/06 23:14:38 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/11/06 23:14:38 INFO SecurityManager: Changing view acls to: rayan
+26/11/06 23:14:38 INFO SecurityManager: Changing modify acls to: rayan
+26/11/06 23:14:38 INFO SecurityManager: Changing view acls groups to: 
+26/11/06 23:14:38 INFO SecurityManager: Changing modify acls groups to: 
+26/11/06 23:14:38 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: rayan; groups with view permissions: EMPTY; users with modify permissions: rayan; groups with modify permissions: EMPTY
+26/11/06 23:14:38 INFO Utils: Successfully started service 'sparkDriver' on port 49952.
+26/11/06 23:14:38 INFO SparkEnv: Registering MapOutputTracker
+26/11/06 23:14:38 INFO SparkEnv: Registering BlockManagerMaster
+26/11/06 23:14:38 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/11/06 23:14:38 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/11/06 23:14:38 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/11/06 23:14:38 INFO DiskBlockManager: Created local directory at C:\Users\rayan\AppData\Local\Temp\blockmgr-36525e92-fedc-4539-842f-0c9c2202055b
+26/11/06 23:14:38 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+26/11/06 23:14:38 INFO SparkEnv: Registering OutputCommitCoordinator
+26/11/06 23:14:38 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/11/06 23:14:38 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/11/06 23:14:38 INFO SparkContext: Added JAR file:///C:/Users/rayan/.ivy2/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar at spark://Rayan.home:49952/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar with timestamp 1794003278320
+26/11/06 23:14:38 INFO SparkContext: Added JAR file:///C:/Users/rayan/.ivy2/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar at spark://Rayan.home:49952/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar with timestamp 1794003278320
+26/11/06 23:14:38 INFO SparkContext: Added JAR file:///C:/Users/rayan/.ivy2/jars/org.apache.kafka_kafka-clients-3.4.1.jar at spark://Rayan.home:49952/jars/org.apache.kafka_kafka-clients-3.4.1.jar with timestamp 1794003278320
+26/11/06 23:14:38 INFO SparkContext: Added JAR file:///C:/Users/rayan/.ivy2/jars/com.google.code.findbugs_jsr305-3.0.0.jar at spark://Rayan.home:49952/jars/com.google.code.findbugs_jsr305-3.0.0.jar with timestamp 1794003278320
+26/11/06 23:14:38 INFO SparkContext: Added JAR file:///C:/Users/rayan/.ivy2/jars/org.apache.commons_commons-pool2-2.11.1.jar at spark://Rayan.home:49952/jars/org.apache.commons_commons-pool2-2.11.1.jar with timestamp 1794003278320
+26/11/06 23:14:38 INFO SparkContext: Added JAR file:///C:/Users/rayan/.ivy2/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar at spark://Rayan.home:49952/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar with timestamp 1794003278320
+26/11/06 23:14:38 INFO SparkContext: Added JAR file:///C:/Users/rayan/.ivy2/jars/org.lz4_lz4-java-1.8.0.jar at spark://Rayan.home:49952/jars/org.lz4_lz4-java-1.8.0.jar with timestamp 1794003278320
+26/11/06 23:14:38 INFO SparkContext: Added JAR file:///C:/Users/rayan/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar at spark://Rayan.home:49952/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar with timestamp 1794003278320
+26/11/06 23:14:38 INFO SparkContext: Added JAR file:///C:/Users/rayan/.ivy2/jars/org.slf4j_slf4j-api-2.0.7.jar at spark://Rayan.home:49952/jars/org.slf4j_slf4j-api-2.0.7.jar with timestamp 1794003278320
+26/11/06 23:14:38 INFO SparkContext: Added JAR file:///C:/Users/rayan/.ivy2/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar at spark://Rayan.home:49952/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar with timestamp 1794003278320
+26/11/06 23:14:38 INFO SparkContext: Added JAR file:///C:/Users/rayan/.ivy2/jars/commons-logging_commons-logging-1.1.3.jar at spark://Rayan.home:49952/jars/commons-logging_commons-logging-1.1.3.jar with timestamp 1794003278320
+26/11/06 23:14:38 INFO SparkContext: Added file file:///C:/Users/rayan/.ivy2/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar at file:///C:/Users/rayan/.ivy2/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar with timestamp 1794003278320
+26/11/06 23:14:38 INFO Utils: Copying C:\Users\rayan\.ivy2\jars\org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar
+26/11/06 23:14:38 INFO SparkContext: Added file file:///C:/Users/rayan/.ivy2/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar at file:///C:/Users/rayan/.ivy2/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar with timestamp 1794003278320
+26/11/06 23:14:38 INFO Utils: Copying C:\Users\rayan\.ivy2\jars\org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar
+26/11/06 23:14:39 INFO SparkContext: Added file file:///C:/Users/rayan/.ivy2/jars/org.apache.kafka_kafka-clients-3.4.1.jar at file:///C:/Users/rayan/.ivy2/jars/org.apache.kafka_kafka-clients-3.4.1.jar with timestamp 1794003278320
+26/11/06 23:14:39 INFO Utils: Copying C:\Users\rayan\.ivy2\jars\org.apache.kafka_kafka-clients-3.4.1.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.apache.kafka_kafka-clients-3.4.1.jar
+26/11/06 23:14:39 INFO SparkContext: Added file file:///C:/Users/rayan/.ivy2/jars/com.google.code.findbugs_jsr305-3.0.0.jar at file:///C:/Users/rayan/.ivy2/jars/com.google.code.findbugs_jsr305-3.0.0.jar with timestamp 1794003278320
+26/11/06 23:14:39 INFO Utils: Copying C:\Users\rayan\.ivy2\jars\com.google.code.findbugs_jsr305-3.0.0.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\com.google.code.findbugs_jsr305-3.0.0.jar
+26/11/06 23:14:39 INFO SparkContext: Added file file:///C:/Users/rayan/.ivy2/jars/org.apache.commons_commons-pool2-2.11.1.jar at file:///C:/Users/rayan/.ivy2/jars/org.apache.commons_commons-pool2-2.11.1.jar with timestamp 1794003278320
+26/11/06 23:14:39 INFO Utils: Copying C:\Users\rayan\.ivy2\jars\org.apache.commons_commons-pool2-2.11.1.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.apache.commons_commons-pool2-2.11.1.jar
+26/11/06 23:14:39 INFO SparkContext: Added file file:///C:/Users/rayan/.ivy2/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar at file:///C:/Users/rayan/.ivy2/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar with timestamp 1794003278320
+26/11/06 23:14:39 INFO Utils: Copying C:\Users\rayan\.ivy2\jars\org.apache.hadoop_hadoop-client-runtime-3.3.4.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.apache.hadoop_hadoop-client-runtime-3.3.4.jar
+26/11/06 23:14:39 INFO SparkContext: Added file file:///C:/Users/rayan/.ivy2/jars/org.lz4_lz4-java-1.8.0.jar at file:///C:/Users/rayan/.ivy2/jars/org.lz4_lz4-java-1.8.0.jar with timestamp 1794003278320
+26/11/06 23:14:39 INFO Utils: Copying C:\Users\rayan\.ivy2\jars\org.lz4_lz4-java-1.8.0.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.lz4_lz4-java-1.8.0.jar
+26/11/06 23:14:39 INFO SparkContext: Added file file:///C:/Users/rayan/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar at file:///C:/Users/rayan/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar with timestamp 1794003278320
+26/11/06 23:14:39 INFO Utils: Copying C:\Users\rayan\.ivy2\jars\org.xerial.snappy_snappy-java-1.1.10.3.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.xerial.snappy_snappy-java-1.1.10.3.jar
+26/11/06 23:14:39 INFO SparkContext: Added file file:///C:/Users/rayan/.ivy2/jars/org.slf4j_slf4j-api-2.0.7.jar at file:///C:/Users/rayan/.ivy2/jars/org.slf4j_slf4j-api-2.0.7.jar with timestamp 1794003278320
+26/11/06 23:14:39 INFO Utils: Copying C:\Users\rayan\.ivy2\jars\org.slf4j_slf4j-api-2.0.7.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.slf4j_slf4j-api-2.0.7.jar
+26/11/06 23:14:39 INFO SparkContext: Added file file:///C:/Users/rayan/.ivy2/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar at file:///C:/Users/rayan/.ivy2/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar with timestamp 1794003278320
+26/11/06 23:14:39 INFO Utils: Copying C:\Users\rayan\.ivy2\jars\org.apache.hadoop_hadoop-client-api-3.3.4.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.apache.hadoop_hadoop-client-api-3.3.4.jar
+26/11/06 23:14:39 INFO SparkContext: Added file file:///C:/Users/rayan/.ivy2/jars/commons-logging_commons-logging-1.1.3.jar at file:///C:/Users/rayan/.ivy2/jars/commons-logging_commons-logging-1.1.3.jar with timestamp 1794003278320
+26/11/06 23:14:39 INFO Utils: Copying C:\Users\rayan\.ivy2\jars\commons-logging_commons-logging-1.1.3.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\commons-logging_commons-logging-1.1.3.jar
+26/11/06 23:14:39 INFO Executor: Starting executor ID driver on host Rayan.home
+26/11/06 23:14:39 INFO Executor: OS info Windows 11, 10.0, amd64
+26/11/06 23:14:39 INFO Executor: Java version 17.0.17
+26/11/06 23:14:39 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+26/11/06 23:14:39 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@3915b2ea for default.
+26/11/06 23:14:39 INFO Executor: Fetching file:///C:/Users/rayan/.ivy2/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar with timestamp 1794003278320
+26/11/06 23:14:39 INFO Utils: C:\Users\rayan\.ivy2\jars\org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar
+26/11/06 23:14:39 INFO Executor: Fetching file:///C:/Users/rayan/.ivy2/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar with timestamp 1794003278320
+26/11/06 23:14:39 INFO Utils: C:\Users\rayan\.ivy2\jars\org.apache.hadoop_hadoop-client-api-3.3.4.jar has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.apache.hadoop_hadoop-client-api-3.3.4.jar
+26/11/06 23:14:39 INFO Executor: Fetching file:///C:/Users/rayan/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar with timestamp 1794003278320
+26/11/06 23:14:39 INFO Utils: C:\Users\rayan\.ivy2\jars\org.xerial.snappy_snappy-java-1.1.10.3.jar has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.xerial.snappy_snappy-java-1.1.10.3.jar
+26/11/06 23:14:39 INFO Executor: Fetching file:///C:/Users/rayan/.ivy2/jars/org.apache.commons_commons-pool2-2.11.1.jar with timestamp 1794003278320
+26/11/06 23:14:39 INFO Utils: C:\Users\rayan\.ivy2\jars\org.apache.commons_commons-pool2-2.11.1.jar has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.apache.commons_commons-pool2-2.11.1.jar
+26/11/06 23:14:39 INFO Executor: Fetching file:///C:/Users/rayan/.ivy2/jars/org.slf4j_slf4j-api-2.0.7.jar with timestamp 1794003278320
+26/11/06 23:14:39 INFO Utils: C:\Users\rayan\.ivy2\jars\org.slf4j_slf4j-api-2.0.7.jar has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.slf4j_slf4j-api-2.0.7.jar
+26/11/06 23:14:39 INFO Executor: Fetching file:///C:/Users/rayan/.ivy2/jars/com.google.code.findbugs_jsr305-3.0.0.jar with timestamp 1794003278320
+26/11/06 23:14:39 INFO Utils: C:\Users\rayan\.ivy2\jars\com.google.code.findbugs_jsr305-3.0.0.jar has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\com.google.code.findbugs_jsr305-3.0.0.jar
+26/11/06 23:14:39 INFO Executor: Fetching file:///C:/Users/rayan/.ivy2/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar with timestamp 1794003278320
+26/11/06 23:14:39 INFO Utils: C:\Users\rayan\.ivy2\jars\org.apache.hadoop_hadoop-client-runtime-3.3.4.jar has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.apache.hadoop_hadoop-client-runtime-3.3.4.jar
+26/11/06 23:14:39 INFO Executor: Fetching file:///C:/Users/rayan/.ivy2/jars/commons-logging_commons-logging-1.1.3.jar with timestamp 1794003278320
+26/11/06 23:14:39 INFO Utils: C:\Users\rayan\.ivy2\jars\commons-logging_commons-logging-1.1.3.jar has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\commons-logging_commons-logging-1.1.3.jar
+26/11/06 23:14:40 INFO Executor: Fetching file:///C:/Users/rayan/.ivy2/jars/org.lz4_lz4-java-1.8.0.jar with timestamp 1794003278320
+26/11/06 23:14:40 INFO Utils: C:\Users\rayan\.ivy2\jars\org.lz4_lz4-java-1.8.0.jar has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.lz4_lz4-java-1.8.0.jar
+26/11/06 23:14:40 INFO Executor: Fetching file:///C:/Users/rayan/.ivy2/jars/org.apache.kafka_kafka-clients-3.4.1.jar with timestamp 1794003278320
+26/11/06 23:14:40 INFO Utils: C:\Users\rayan\.ivy2\jars\org.apache.kafka_kafka-clients-3.4.1.jar has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.apache.kafka_kafka-clients-3.4.1.jar
+26/11/06 23:14:40 INFO Executor: Fetching file:///C:/Users/rayan/.ivy2/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar with timestamp 1794003278320
+26/11/06 23:14:40 INFO Utils: C:\Users\rayan\.ivy2\jars\org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar
+26/11/06 23:14:40 INFO Executor: Fetching spark://Rayan.home:49952/jars/org.lz4_lz4-java-1.8.0.jar with timestamp 1794003278320
+26/11/06 23:14:40 INFO TransportClientFactory: Successfully created connection to Rayan.home/192.168.1.131:49952 after 18 ms (0 ms spent in bootstraps)
+26/11/06 23:14:40 INFO Utils: Fetching spark://Rayan.home:49952/jars/org.lz4_lz4-java-1.8.0.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp16551156929644051385.tmp
+26/11/06 23:14:40 INFO Utils: C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp16551156929644051385.tmp has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.lz4_lz4-java-1.8.0.jar
+26/11/06 23:14:40 INFO Executor: Adding file:/C:/Users/rayan/AppData/Local/Temp/spark-15fbdc69-9de9-4077-a559-44c7cb1d199d/userFiles-57712074-33a4-45ac-8292-95252199df64/org.lz4_lz4-java-1.8.0.jar to class loader default
+26/11/06 23:14:40 INFO Executor: Fetching spark://Rayan.home:49952/jars/commons-logging_commons-logging-1.1.3.jar with timestamp 1794003278320
+26/11/06 23:14:40 INFO Utils: Fetching spark://Rayan.home:49952/jars/commons-logging_commons-logging-1.1.3.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp1190895914771114165.tmp
+26/11/06 23:14:40 INFO Utils: C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp1190895914771114165.tmp has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\commons-logging_commons-logging-1.1.3.jar
+26/11/06 23:14:40 INFO Executor: Adding file:/C:/Users/rayan/AppData/Local/Temp/spark-15fbdc69-9de9-4077-a559-44c7cb1d199d/userFiles-57712074-33a4-45ac-8292-95252199df64/commons-logging_commons-logging-1.1.3.jar to class loader default
+26/11/06 23:14:40 INFO Executor: Fetching spark://Rayan.home:49952/jars/org.apache.commons_commons-pool2-2.11.1.jar with timestamp 1794003278320
+26/11/06 23:14:40 INFO Utils: Fetching spark://Rayan.home:49952/jars/org.apache.commons_commons-pool2-2.11.1.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp14283834147620073479.tmp
+26/11/06 23:14:40 INFO Utils: C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp14283834147620073479.tmp has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.apache.commons_commons-pool2-2.11.1.jar
+26/11/06 23:14:40 INFO Executor: Adding file:/C:/Users/rayan/AppData/Local/Temp/spark-15fbdc69-9de9-4077-a559-44c7cb1d199d/userFiles-57712074-33a4-45ac-8292-95252199df64/org.apache.commons_commons-pool2-2.11.1.jar to class loader default
+26/11/06 23:14:40 INFO Executor: Fetching spark://Rayan.home:49952/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar with timestamp 1794003278320
+26/11/06 23:14:40 INFO Utils: Fetching spark://Rayan.home:49952/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp15473506273858348094.tmp
+26/11/06 23:14:40 INFO Utils: C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp15473506273858348094.tmp has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar
+26/11/06 23:14:40 INFO Executor: Adding file:/C:/Users/rayan/AppData/Local/Temp/spark-15fbdc69-9de9-4077-a559-44c7cb1d199d/userFiles-57712074-33a4-45ac-8292-95252199df64/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar to class loader default
+26/11/06 23:14:40 INFO Executor: Fetching spark://Rayan.home:49952/jars/org.apache.kafka_kafka-clients-3.4.1.jar with timestamp 1794003278320
+26/11/06 23:14:40 INFO Utils: Fetching spark://Rayan.home:49952/jars/org.apache.kafka_kafka-clients-3.4.1.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp2178709828075884723.tmp
+26/11/06 23:14:40 INFO Utils: C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp2178709828075884723.tmp has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.apache.kafka_kafka-clients-3.4.1.jar
+26/11/06 23:14:40 INFO Executor: Adding file:/C:/Users/rayan/AppData/Local/Temp/spark-15fbdc69-9de9-4077-a559-44c7cb1d199d/userFiles-57712074-33a4-45ac-8292-95252199df64/org.apache.kafka_kafka-clients-3.4.1.jar to class loader default
+26/11/06 23:14:40 INFO Executor: Fetching spark://Rayan.home:49952/jars/com.google.code.findbugs_jsr305-3.0.0.jar with timestamp 1794003278320
+26/11/06 23:14:40 INFO Utils: Fetching spark://Rayan.home:49952/jars/com.google.code.findbugs_jsr305-3.0.0.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp14734921530042231285.tmp
+26/11/06 23:14:40 INFO Utils: C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp14734921530042231285.tmp has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\com.google.code.findbugs_jsr305-3.0.0.jar
+26/11/06 23:14:40 INFO Executor: Adding file:/C:/Users/rayan/AppData/Local/Temp/spark-15fbdc69-9de9-4077-a559-44c7cb1d199d/userFiles-57712074-33a4-45ac-8292-95252199df64/com.google.code.findbugs_jsr305-3.0.0.jar to class loader default
+26/11/06 23:14:40 INFO Executor: Fetching spark://Rayan.home:49952/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar with timestamp 1794003278320
+26/11/06 23:14:40 INFO Utils: Fetching spark://Rayan.home:49952/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp2256256148513307113.tmp
+26/11/06 23:14:40 INFO Utils: C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp2256256148513307113.tmp has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.apache.hadoop_hadoop-client-runtime-3.3.4.jar
+26/11/06 23:14:40 INFO Executor: Adding file:/C:/Users/rayan/AppData/Local/Temp/spark-15fbdc69-9de9-4077-a559-44c7cb1d199d/userFiles-57712074-33a4-45ac-8292-95252199df64/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar to class loader default
+26/11/06 23:14:40 INFO Executor: Fetching spark://Rayan.home:49952/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar with timestamp 1794003278320
+26/11/06 23:14:40 INFO Utils: Fetching spark://Rayan.home:49952/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp16715751732354438919.tmp
+26/11/06 23:14:40 INFO Utils: C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp16715751732354438919.tmp has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.apache.hadoop_hadoop-client-api-3.3.4.jar
+26/11/06 23:14:40 INFO Executor: Adding file:/C:/Users/rayan/AppData/Local/Temp/spark-15fbdc69-9de9-4077-a559-44c7cb1d199d/userFiles-57712074-33a4-45ac-8292-95252199df64/org.apache.hadoop_hadoop-client-api-3.3.4.jar to class loader default
+26/11/06 23:14:40 INFO Executor: Fetching spark://Rayan.home:49952/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar with timestamp 1794003278320
+26/11/06 23:14:40 INFO Utils: Fetching spark://Rayan.home:49952/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp14315292615055776693.tmp
+26/11/06 23:14:40 INFO Utils: C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp14315292615055776693.tmp has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.xerial.snappy_snappy-java-1.1.10.3.jar
+26/11/06 23:14:40 INFO Executor: Adding file:/C:/Users/rayan/AppData/Local/Temp/spark-15fbdc69-9de9-4077-a559-44c7cb1d199d/userFiles-57712074-33a4-45ac-8292-95252199df64/org.xerial.snappy_snappy-java-1.1.10.3.jar to class loader default
+26/11/06 23:14:40 INFO Executor: Fetching spark://Rayan.home:49952/jars/org.slf4j_slf4j-api-2.0.7.jar with timestamp 1794003278320
+26/11/06 23:14:40 INFO Utils: Fetching spark://Rayan.home:49952/jars/org.slf4j_slf4j-api-2.0.7.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp11985677324740571365.tmp
+26/11/06 23:14:40 INFO Utils: C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp11985677324740571365.tmp has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.slf4j_slf4j-api-2.0.7.jar
+26/11/06 23:14:40 INFO Executor: Adding file:/C:/Users/rayan/AppData/Local/Temp/spark-15fbdc69-9de9-4077-a559-44c7cb1d199d/userFiles-57712074-33a4-45ac-8292-95252199df64/org.slf4j_slf4j-api-2.0.7.jar to class loader default
+26/11/06 23:14:40 INFO Executor: Fetching spark://Rayan.home:49952/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar with timestamp 1794003278320
+26/11/06 23:14:40 INFO Utils: Fetching spark://Rayan.home:49952/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp17070752763929872754.tmp
+26/11/06 23:14:40 INFO Utils: C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\fetchFileTemp17070752763929872754.tmp has been previously copied to C:\Users\rayan\AppData\Local\Temp\spark-15fbdc69-9de9-4077-a559-44c7cb1d199d\userFiles-57712074-33a4-45ac-8292-95252199df64\org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar
+26/11/06 23:14:40 INFO Executor: Adding file:/C:/Users/rayan/AppData/Local/Temp/spark-15fbdc69-9de9-4077-a559-44c7cb1d199d/userFiles-57712074-33a4-45ac-8292-95252199df64/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar to class loader default
+26/11/06 23:14:40 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 49955.
+26/11/06 23:14:40 INFO NettyBlockTransferService: Server created on Rayan.home:49955
+26/11/06 23:14:40 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/11/06 23:14:40 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, Rayan.home, 49955, None)
+26/11/06 23:14:40 INFO BlockManagerMasterEndpoint: Registering block manager Rayan.home:49955 with 434.4 MiB RAM, BlockManagerId(driver, Rayan.home, 49955, None)
+26/11/06 23:14:40 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, Rayan.home, 49955, None)
+26/11/06 23:14:40 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, Rayan.home, 49955, None)
+26/11/06 23:14:41 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+26/11/06 23:14:41 INFO SharedState: Warehouse path is 'file:/C:/capstone/spark-warehouse'.
+26/11/06 23:14:44 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+26/11/06 23:14:44 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+26/11/06 23:14:45 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:14:45 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:14:45 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+26/11/06 23:14:45 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:14:45 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+Reading perf_C_1794003274. Invalid messages go to vehicle_events_dlq. Ctrl+C to stop.
+26/11/06 23:14:46 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:14:47 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:14:47 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:14:47 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:14:48 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:14:48 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:14:48 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:14:48 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:14:48 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:14:51 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 5000 milliseconds, but spent 6605 milliseconds
+26/11/06 23:14:57 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 5000 milliseconds, but spent 5639 milliseconds
+26/11/06 23:15:45 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 5000 milliseconds, but spent 60260 milliseconds
+26/11/06 23:15:46 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:15:46 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:15:46 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:15:46 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 5000 milliseconds, but spent 49403 milliseconds
+26/11/06 23:16:39 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 5000 milliseconds, but spent 113148 milliseconds
+26/11/06 23:16:39 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:16:39 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:16:39 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:17:49 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 5000 milliseconds, but spent 123849 milliseconds
+26/11/06 23:17:50 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:17:50 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:17:50 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:18:12 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 5000 milliseconds, but spent 207373 milliseconds
+26/11/06 23:18:12 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:18:13 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:19:02 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 5000 milliseconds, but spent 143722 milliseconds
+26/11/06 23:19:03 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:19:03 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:19:03 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:19:48 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 5000 milliseconds, but spent 119051 milliseconds
+26/11/06 23:20:33 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 5000 milliseconds, but spent 90523 milliseconds
+26/11/06 23:21:20 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 5000 milliseconds, but spent 188145 milliseconds
+26/11/06 23:21:21 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:21:21 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:21:46 WARN HDFSBackedStateStoreProvider: The state for version 2 doesn't exist in loadedMaps. Reading snapshot file and delta files if needed...Note that this is normal for the first batch of starting query.
+26/11/06 23:21:46 WARN HDFSBackedStateStoreProvider: The state for version 2 doesn't exist in loadedMaps. Reading snapshot file and delta files if needed...Note that this is normal for the first batch of starting query.
+26/11/06 23:21:46 WARN HDFSBackedStateStoreProvider: The state for version 2 doesn't exist in loadedMaps. Reading snapshot file and delta files if needed...Note that this is normal for the first batch of starting query.
+26/11/06 23:21:47 WARN HDFSBackedStateStoreProvider: The state for version 2 doesn't exist in loadedMaps. Reading snapshot file and delta files if needed...Note that this is normal for the first batch of starting query.
+26/11/06 23:22:08 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 5000 milliseconds, but spent 48132 milliseconds
+26/11/06 23:22:15 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:22:15 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:22:15 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:22:15 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:22:15 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:22:15 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:22:15 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:22:15 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:23:09 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 5000 milliseconds, but spent 54233 milliseconds
+26/11/06 23:23:09 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:23:09 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:23:09 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:23:32 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 5000 milliseconds, but spent 72875 milliseconds
+26/11/06 23:23:54 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 5000 milliseconds, but spent 99457 milliseconds
+26/11/06 23:23:54 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:23:54 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:23:54 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+26/11/06 23:23:55 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 5000 milliseconds, but spent 22392 milliseconds
